@@ -343,6 +343,7 @@ public class MqConstant {
     //后台彩种代码开启或者禁用后的后续业务处理MQ
     public static final String LOTTER_STATUS_CHANGE_QUEYE = "lotter_status_change_queue";
     
-    
+	// 注册送
+	public static final String REGISTER_TO_SEND = "register_to_send";
 }
 

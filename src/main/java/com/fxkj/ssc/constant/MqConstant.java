@@ -61,6 +61,7 @@ public class MqConstant {
     //异地登录监听
     public static final String USER_LOGIN_LISTEN_QUEUE = "user-login-listen-queue";               //用户登陆监听：是否异地登陆
 
+
     // 电子游戏平台游戏结算队列
     public static final String VENICE_BET_RECORD_DETAIL_QUEUE = "venice_bet_record_detail";
 

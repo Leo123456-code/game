@@ -8,7 +8,7 @@ public class MqConstant {
     public static final String LOTTERY_COMPUTE_START_QUEUE = "lottery-compute-start-queue";
     //订单开奖
 //    public static final String ORDER_OPEN_RESULT_QUEUE = "order-open-result-queue";
-    
+
     //更新订单状态，计算奖金队列
 //    public static final String ORDER_STATUS_QUEUE = "order-status-queue";
 
@@ -83,7 +83,7 @@ public class MqConstant {
 
     //生成消费送新活动的活动单队列
 //    public static final String ACTIVITY_NEWXFS_QUEUE = "activity-newxfs-queue";
-    
+
     //派发消费送新活动的活动彩金队列
 //    public static final String DISTRIBUTE_ACTIVITY_NEWXFS_QUEUE = "distribute-activity-newxfs-queue";
     //派发彩种消费送活动彩金队列
@@ -263,7 +263,7 @@ public class MqConstant {
 
     //执行昨天币宝未处理的订单
     public static final String WITHDRAW_BIBAO_WEICHULI_QUEUE = "withdraw-bibao-weichuli-queue";
-    
+
     //执行昨天个人转账未处理的订单
     public static final String RECHARGE_PERSON_WEICHULI_QUEUE = "recharge-person-weichuli-queue";
 
@@ -328,23 +328,26 @@ public class MqConstant {
 //
 //    public static final String DS_BET_RECORD_DETAIL_QUEUE = "ds_bet_record_detail_queue";
 //
+    // 电子游戏平台游戏结算队列
     public static final String VENICE_BET_RECORD_DETAIL_QUEUE = "venice_bet_record_detail";
 
+    // 电子游戏返点返水计算队列
     public static final String VENICE_BET_RECORD_COMPUTE_QUEUE = "venice_bet_record_compute_queue";
 
+    // 电子游戏个人投注记录结算队列
     public static final String VENICE_MEMBER_BET_RECORD_QUEUE = "venice_member_bet_record_queue";
-    
+
     //聊天群的红包领取到账队列
 //    public static final String DISTRIBUTE_REDENVELOPE_QUEUE = "distribute_redenvelope_queue"; 
     //拉取24小时过期红包的数据
 //    public static final String DRAW_EXPIRED_RED_ENVELOPE_DATA_QUEUE = "draw_expired_red_envelope_data_queue"; 
     //计算24小时过期红包并且退款
 //    public static final String COMPUTE_RED_ENVELOPE_AMOUNT_QUEUE = "compute_red_envelope_amount_queue"; 
-    
+
     //后台彩种代码开启或者禁用后的后续业务处理MQ
 //    public static final String LOTTER_STATUS_CHANGE_QUEYE = "lotter_status_change_queue";
-    
-	// 注册送
+
+    // 注册送
 //	public static final String REGISTER_TO_SEND = "register_to_send";
 }
 

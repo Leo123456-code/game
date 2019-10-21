@@ -73,5 +73,8 @@ public class MqConstant {
 	// 注册送
 	public static final String GAME_REGISTER_TO_SEND = "game_register_to_send";
 
+	// 获取中间站彩票数据
+	public static final String GAME_GET_LOTTERY_DATA = "game_get_lottery_data";
+
 }
 

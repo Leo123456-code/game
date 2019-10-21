@@ -82,6 +82,9 @@ public class MqConstant {
 	//处理正在游戏中的用户 
 	public static final String GAME_DISPOSE_IN_GAME_USER = "game_dispose_in_game_user";
 
+	// 消费送
+	public static final String GAME_CONSUMER_DELIVERY = "game_consumer_delivery";
+
 
 }
 

@@ -564,6 +564,13 @@ public class DateUtils {
 		String yesterday = new SimpleDateFormat("yyyy-MM-dd").format(cal.getTime());
 		return yesterday;
 	}
+	
+	public static String getConfirmDate(Date schedule,Integer days) {
+		Calendar cal = Calendar.getInstance();
+		cal.add(Calendar.DATE, -days);
+		String yesterday = new SimpleDateFormat("yyyy-MM-dd").format(cal.getTime());
+		return yesterday;
+	}
 
 	/**
 	 * @Description: 获取下一天的日期

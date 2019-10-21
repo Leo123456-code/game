@@ -30,7 +30,11 @@ public enum VeniceUrlEnum {
     /**
      * 获取开通游戏列表
      */
-    GET_GAME_LIST("/getGameList", "获取开通游戏列表");
+    GET_GAME_LIST("/getGameList", "获取开通游戏列表"),
+	/**
+	 * 获取开通游戏列表
+	 */
+	GET_GAME_USER_MESSAGE("/getUserAccount", "获取对应游戏用户信息");
 
     private String url;
     private String desc;

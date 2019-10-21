@@ -75,6 +75,13 @@ public class MqConstant {
 
 	// 获取中间站彩票数据
 	public static final String GAME_GET_LOTTERY_DATA = "game_get_lottery_data";
+	
+	//查询正在游戏中的用户
+	public static final String GAME_IN_GAME_USER = "game_in_game_user";
+	
+	//处理正在游戏中的用户 
+	public static final String GAME_DISPOSE_IN_GAME_USER = "game_dispose_in_game_user";
+
 
 }
 

@@ -14,15 +14,15 @@ public class UserPowerConstant {
 	 */
 	public static final String LOWER_LEVEL_RECHARGE_KEY = "lower_level_recharge";
 	
-	/**
-	 * @param REBATE_AUTHORITY_KEY 用户彩票同级返点权限key   对应Value含义：彩票同级返点权限：(0:已开通  1：未开通)
-	 */
-	public static final String LOTTERY_REBATE_AUTHORITY_KEY = "lottery_rebate_authority";
+//	/**
+//	 * @param REBATE_AUTHORITY_KEY 用户彩票同级返点权限key   对应Value含义：彩票同级返点权限：(0:已开通  1：未开通)
+//	 */
+//	public static final String LOTTERY_REBATE_AUTHORITY_KEY = "lottery_rebate_authority";
 	
-	/**
-	 * @param REBATE_AUTHORITY_KEY 用户快乐彩同级返点权限key   对应Value含义：快乐彩同级返点权限：(0:已开通  1：未开通)
-	 */
-	public static final String KLC_REBATE_AUTHORITY_KEY = "klc_rebate_authority";
+//	/**
+//	 * @param REBATE_AUTHORITY_KEY 用户快乐彩同级返点权限key   对应Value含义：快乐彩同级返点权限：(0:已开通  1：未开通)
+//	 */
+//	public static final String KLC_REBATE_AUTHORITY_KEY = "klc_rebate_authority";
 	
 //	/**
 //	 * 投注权限：风控使用权限字段，当不满足风控要求时，自动写入记录： 0：允许投注 1：不允许投注

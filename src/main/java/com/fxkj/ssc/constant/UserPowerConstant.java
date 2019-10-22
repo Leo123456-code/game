@@ -24,10 +24,10 @@ public class UserPowerConstant {
 	 */
 	public static final String KLC_REBATE_AUTHORITY_KEY = "klc_rebate_authority";
 	
-	/**
-	 * 投注权限：风控使用权限字段，当不满足风控要求时，自动写入记录： 0：允许投注 1：不允许投注
-	 */
-	public static final String BETTING_AUTHORITY_KEY = "betting_authority";
+//	/**
+//	 * 投注权限：风控使用权限字段，当不满足风控要求时，自动写入记录： 0：允许投注 1：不允许投注
+//	 */
+//	public static final String BETTING_AUTHORITY_KEY = "betting_authority";
 	
 	/**
 	 * 取款权限：风控使用权限字段，当不满足风控要求的时候，自动写入记录 ： 0 ：允许取款 1：不允许取款

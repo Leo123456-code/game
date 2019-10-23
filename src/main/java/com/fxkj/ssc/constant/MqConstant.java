@@ -83,7 +83,10 @@ public class MqConstant {
 	public static final String GAME_DISPOSE_IN_GAME_USER = "game_dispose_in_game_user";
 	
 	// 消费送
-		public static final String GAME_CONSUMER_DELIVERY = "game_consumer_delivery";
+	public static final String GAME_CONSUMER_DELIVERY = "game_consumer_delivery";
+
+	// 派发消费送
+	public static final String GAME_DISTRIBUTE_CONSUMER_DELIVERY = "game_distribute_consumer_delivery";
 
 
 }

@@ -93,5 +93,8 @@ public class MqConstant {
 	
 	//vip晋级彩金队列
 	public static final String GAME_VIP_RISEBONS_QUEUE = "game-vip-riseBons-queue";
+	
+	//生成爆奖计划队列
+    public static final String GENERATION_BRUST_PLAN_QUEUE = "generation-brust-plan-queue";
 }
 

@@ -31,10 +31,14 @@ public enum VeniceUrlEnum {
      * 获取开通游戏列表
      */
     GET_GAME_LIST("/getGameList", "获取开通游戏列表"),
-	/**
-	 * 获取开通游戏列表
-	 */
-	GET_GAME_USER_MESSAGE("/getUserAccount", "获取对应游戏用户信息");
+    /**
+     * 获取开通游戏列表
+     */
+    GET_GAME_USER_MESSAGE("/getUserAccount", "获取对应游戏用户信息"),
+
+    GET_BET_FLOW_DETAIL("/getBetFlowDetail", "获取用户投注流水明细"),
+
+    GET_USER_DAY_REPORT("/getUserDayReport", "获取用户日投注记录结算");
 
     private String url;
     private String desc;
@@ -52,7 +56,7 @@ public enum VeniceUrlEnum {
     }
 
     /**
-     * @param 设置  url 
+     * @param 设置 url
      */
     public void setUrl(String url) {
         this.url = url;
@@ -66,7 +70,7 @@ public enum VeniceUrlEnum {
     }
 
     /**
-     * @param 设置  desc 
+     * @param 设置 desc
      */
     public void setDesc(String desc) {
         this.desc = desc;

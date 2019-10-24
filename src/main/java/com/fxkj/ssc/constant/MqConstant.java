@@ -70,6 +70,9 @@ public class MqConstant {
     // 电子游戏个人投注记录结算队列
     public static final String VENICE_MEMBER_BET_RECORD_QUEUE = "venice_member_bet_record_queue";
 
+    // 电子游戏投注流水明细
+    public static final String VENICE_BET_FLOW_DETAIL_QUEUE = "venice_bet_flow_detail_queue";
+
 	// 注册送
 	public static final String GAME_REGISTER_TO_SEND = "game_register_to_send";
 

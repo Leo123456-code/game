@@ -88,13 +88,86 @@ public class MqConstant {
 	// 派发消费送
 	public static final String GAME_DISTRIBUTE_CONSUMER_DELIVERY = "game_distribute_consumer_delivery";
 
+	//生成爆奖计划队列
+    public static final String GENERATION_PLAN_QUEUE = "generation-brust-plan-queue";
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     //----------------------------------------------------------------------------------------
 	//单笔充值金额，Vip等级提升监听
 	public static final String GAME_VIP_SINGLE_DEPOSIT = "game-vip-single-deposit-queue";
 	
 	//vip晋级彩金队列
 	public static final String GAME_VIP_RISEBONS_QUEUE = "game-vip-riseBons-queue";
 	
-	//生成爆奖计划队列
-    public static final String GENERATION_PLAN_QUEUE = "generation-brust-plan-queue";
+	//Vip月累计充值检测
+	public static final String GAME_VIP_MONTH_GRAND_QUEUE = "game-vip-month-grand-queue";
+	
+	//转运金
+	public static final String GAME_VIP_BED_LUCK_QUEUE = "game-vip-bed-luck-queue";
+	  //----------------------------------------------------------------------------------------
+    
+    
+    
+    
+    
+    
 }
 

@@ -116,7 +116,13 @@ public class MqConstant {
     
     //----------------------------------------------------------------------------------------
 
-
+    //查询所有用户mq
+    public static final String GAME_USER_ALL_QUERY = "game_user_all_query";
+    
+    //获取用户所有游戏金额
+    public static final String GAME_USER_GAME_BALANCE = "game_user_game_balance";
+    //威尼斯提现mq
+    public static final String GAME_WITHDRAW_AGENT = "game_withdraw_agent";
 
 
 

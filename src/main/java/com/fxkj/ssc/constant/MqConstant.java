@@ -109,7 +109,7 @@ public class MqConstant {
     public static final String GAME_VIP_MONTH_GRAND_QUEUE = "game-vip-month-grand-queue";
 
     //转运金
-    public static final String GAME_VIP_BED_LUCK_QUEUE = "game-vip-bed-luck-queue";
+    public static final String GAME_VIP_CHANGE_LUCK_QUEUE = "game-vip-change-luck-queue";
     //----------------------------------------------------------------------------------------
 
 

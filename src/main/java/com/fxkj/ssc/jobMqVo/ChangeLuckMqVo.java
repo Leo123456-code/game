@@ -10,7 +10,7 @@ import com.fxkj.ssc.baseVo.RabbitmqBaseVO;
  * 说明: 转运金
  *
  */
-public class BedLuckMqVo extends RabbitmqBaseVO {
+public class ChangeLuckMqVo extends RabbitmqBaseVO {
 
 	//执行时间
 	private Date currentDate;

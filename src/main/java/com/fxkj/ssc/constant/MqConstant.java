@@ -110,6 +110,10 @@ public class MqConstant {
 
     //转运金
     public static final String GAME_VIP_CHANGE_LUCK_QUEUE = "game-vip-change-luck-queue";
+    
+    //vip自动降级检测
+    public static final String GAME_VIP_DEMOTED_QUEUE = "game-vip-demoted-queue";
+    
     //----------------------------------------------------------------------------------------
 
 

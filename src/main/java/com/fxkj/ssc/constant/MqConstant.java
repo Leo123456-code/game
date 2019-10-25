@@ -70,31 +70,56 @@ public class MqConstant {
     // 电子游戏个人投注记录结算队列
     public static final String VENICE_MEMBER_BET_RECORD_QUEUE = "venice_member_bet_record_queue";
 
-	// 注册送
-	public static final String GAME_REGISTER_TO_SEND = "game_register_to_send";
+    // 电子游戏投注流水明细
+    public static final String VENICE_BET_FLOW_DETAIL_QUEUE = "venice_bet_flow_detail_queue";
 
-	// 获取中间站彩票数据
-	public static final String GAME_GET_LOTTERY_DATA = "game_get_lottery_data";
-	
-	//查询正在游戏中的用户
-	public static final String GAME_IN_GAME_USER = "game_in_game_user";
-	
-	//处理正在游戏中的用户 
-	public static final String GAME_DISPOSE_IN_GAME_USER = "game_dispose_in_game_user";
-	
-	// 消费送
-	public static final String GAME_CONSUMER_DELIVERY = "game_consumer_delivery";
+    // 电子游戏日投注记录
+    public static final String VENICE_USE_DAY_REPORT_QUEUE = "venice_use_day_report_queue";
 
-	// 派发消费送
-	public static final String GAME_DISTRIBUTE_CONSUMER_DELIVERY = "game_distribute_consumer_delivery";
+    // 注册送
+    public static final String GAME_REGISTER_TO_SEND = "game_register_to_send";
 
-	//单笔充值金额，Vip等级提升监听
-	public static final String GAME_VIP_SINGLE_DEPOSIT = "game-vip-single-deposit-queue";
-	
-	//vip晋级彩金队列
-	public static final String GAME_VIP_RISEBONS_QUEUE = "game-vip-riseBons-queue";
-	
-	//生成爆奖计划队列
+    // 获取中间站彩票数据
+    public static final String GAME_GET_LOTTERY_DATA = "game_get_lottery_data";
+
+    //查询正在游戏中的用户
+    public static final String GAME_IN_GAME_USER = "game_in_game_user";
+
+    //处理正在游戏中的用户
+    public static final String GAME_DISPOSE_IN_GAME_USER = "game_dispose_in_game_user";
+
+    // 消费送
+    public static final String GAME_CONSUMER_DELIVERY = "game_consumer_delivery";
+
+    // 派发消费送
+    public static final String GAME_DISTRIBUTE_CONSUMER_DELIVERY = "game_distribute_consumer_delivery";
+
+    //生成爆奖计划队列
     public static final String GENERATION_PLAN_QUEUE = "generation-brust-plan-queue";
+
+
+    //----------------------------------------------------------------------------------------
+    //单笔充值金额，Vip等级提升监听
+    public static final String GAME_VIP_SINGLE_DEPOSIT = "game-vip-single-deposit-queue";
+
+    //vip晋级彩金队列
+    public static final String GAME_VIP_RISEBONS_QUEUE = "game-vip-riseBons-queue";
+
+    //Vip月累计充值检测
+    public static final String GAME_VIP_MONTH_GRAND_QUEUE = "game-vip-month-grand-queue";
+
+    //转运金
+    public static final String GAME_VIP_CHANGE_LUCK_QUEUE = "game-vip-change-luck-queue";
+    
+    //vip自动降级检测
+    public static final String GAME_VIP_DEMOTED_QUEUE = "game-vip-demoted-queue";
+    
+    //----------------------------------------------------------------------------------------
+
+
+
+
+
+
 }
 

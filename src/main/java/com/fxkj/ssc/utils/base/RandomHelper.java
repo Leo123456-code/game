@@ -81,4 +81,25 @@ public class RandomHelper {
 		return codeStr;
 	}
 
+	/**
+	 * 作者:Jack
+	 * 日期:2019年10月27日上午4:07:55
+	 * @param start
+	 * @param end
+	 * @return
+	 * 返回值:int
+	 * 返回值说明:产生两个数时间的随机数
+	 */
+	public static int getRandomNumber(int start,int end) {
+		
+		 //创建Random类对象
+        Random random = new Random();              
+         
+        //产生随机数
+        int number = random.nextInt(end - start + 1) + start;
+         
+        return number;
+		
+	}
+	
 }

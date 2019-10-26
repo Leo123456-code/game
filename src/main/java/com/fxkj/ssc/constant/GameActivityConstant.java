@@ -18,6 +18,7 @@ public class GameActivityConstant {
 	
 	public static final String GAME_BRUST_ACTIVITY_CODE ="brustActivity";
 	
+	public static final String GAME_SCS_ACTIVITY_CODE ="scsActivity";
 	/** 奖池当前总余额Paramkey*/
 	public static final String PPCURRENTAMOUNT = "ppCurrentAmount";
 	
@@ -51,4 +52,9 @@ public class GameActivityConstant {
 	public static final int  CHANGE_TYPE          = 14;
 	
 	public static final int  brust_status_over          = 2;
+	
+	//手动
+	public static final int BY_HAND_WAY = 1;
+	
+	public static final int SYSTEM_WAY=0;
 }

@@ -97,6 +97,9 @@ public class MqConstant {
     //生成爆奖计划队列
     public static final String GENERATION_PLAN_QUEUE = "generation-brust-plan-queue";
     
+    //爆奖执行队列
+    public static final String BRUST_START_QUEUE = "brust_start_queue";
+    
     //首充送活动单生成队列
     public static final String GAME_GENERATION_SCXACT_RECORD = "game-generation-scxact-record";
     

@@ -100,6 +100,7 @@ public class MqConstant {
     //首充送活动单生成队列
     public static final String GAME_GENERATION_SCXACT_RECORD = "game-generation-scxact-record";
     
+   
     //首充送活动单派发队列
     public static final String GAME_DISTRIBUTE_SCXACT_RECORD = "game-distribute-scxact-record";
 

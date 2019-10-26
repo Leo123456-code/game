@@ -47,6 +47,75 @@ public class DateUtils {
 			return null;
 		}
 	}
+	
+	/**获取下周日的日期 james*/
+	public static String getNextSunday(Date date) throws Exception {
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(date);
+		int week = cal.get(Calendar.DAY_OF_WEEK);
+		if (week > 1) {
+			cal.add(Calendar.DAY_OF_MONTH, -(week - 1) + 7);
+		} else {
+			cal.add(Calendar.DAY_OF_MONTH, 1 - week + 7);
+		}
+		return DateUtils.formateDate(cal.getTime());
+	}
+ 
+	/**判断当前是否是周日 james*/
+	private static boolean confirmSunday(Date date) {
+		Calendar cal = Calendar.getInstance();
+		return cal.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY;
+	}
+	
+	/**获取往后最近的周日的日期 james*/
+	public static String getLastSunday() throws Exception {
+		Date date = new Date();
+		if(confirmSunday(date)) {
+			return DateUtils.formateDate(date);
+		}
+		return getNextSunday(date);
+	}
+	
+	/**获取今天是否是1号 james*/
+	public static boolean comfirmMonthFirstDay() {
+		Calendar cal = Calendar.getInstance();
+		return cal.get(Calendar.DAY_OF_MONTH) == 1;
+	}
+	
+	/**获取下一个月1号的日期 james*/
+	public static String getNextFirstDay() {
+		
+		Calendar cal = Calendar.getInstance();
+		int nextMonth =cal.get(Calendar.MONTH)+1+1;
+		int year = cal.get(Calendar.YEAR);
+		int targetYear = 0;
+		int targetMonth =nextMonth;
+		String targetDate = "";
+		if(nextMonth >=13) {
+			targetYear = year+1;
+			targetDate = targetYear +"-01-01";
+			
+		}else {
+			targetYear = year;
+			StringBuilder builder = new StringBuilder();
+			if(targetMonth>=10) {
+				builder =builder.append(year).append("-").append(targetMonth).append("-").append("01");
+			}else {
+				builder =builder.append(year).append("-").append("0").append(targetMonth).append("-").append("01");
+			}
+			targetDate = builder.toString();
+		}
+		return targetDate;
+	}
+	
+	/**获取往后最近的1号的日期 james*/
+	public static String getLastFirstDay() {
+		if(comfirmMonthFirstDay()) {
+			return DateUtils.formateDate(new Date());
+		}
+		return getNextFirstDay();
+	}
+	
 	/**
 	 * 使用用户格式提取字符串日期
 	 *

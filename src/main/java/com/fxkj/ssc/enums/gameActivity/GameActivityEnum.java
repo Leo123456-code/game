@@ -16,7 +16,7 @@ public enum GameActivityEnum {
     
 	FIRSTPRIZE(1,"一等奖"),
 	SECONDPRIZE(2,"二等奖"),
-	THIRDPRIZE(2,"二等奖"),
+	THIRDPRIZE(3,"三等奖"),
 	;
 	
 	private Integer code;

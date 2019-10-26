@@ -13,7 +13,7 @@ package com.fxkj.ssc.constant;
 public class GameActivityConstant {
 
 	
-	/** 大爆奖活动的消息用户UserId*/
+	/** 大爆奖活动的消息前台用户UserId*/
 	public static final Long brust_Activity = -10000L;
 	
 	public static final String GAME_BRUST_ACTIVITY_CODE ="brustActivity";
@@ -44,4 +44,11 @@ public class GameActivityConstant {
 	
 	/**当前中奖用户不留后门*/
 	public static final int is_back_door_false = 0;
+	
+	public static final String CURRENCY_CODE = "CNY";
+	
+	//活动账变
+	public static final int  CHANGE_TYPE          = 14;
+	
+	public static final int  brust_status_over          = 2;
 }

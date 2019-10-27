@@ -102,4 +102,7 @@ public class RandomHelper {
 		
 	}
 	
+	public static void main(String[] args) {
+		System.out.println(getRandomNumber(0,1));
+	}
 }

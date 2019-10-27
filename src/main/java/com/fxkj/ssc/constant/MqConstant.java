@@ -106,7 +106,8 @@ public class MqConstant {
    
     //首充送活动单派发队列
     public static final String GAME_DISTRIBUTE_SCXACT_RECORD = "game-distribute-scxact-record";
-
+    
+    public static final String GAME_PRIZE_POOL_AMOUNT_INCRESE = "game_prize_pool_amount_increse_queue";
 
     //----------------------------------------------------------------------------------------
     //单笔充值金额，Vip等级提升监听

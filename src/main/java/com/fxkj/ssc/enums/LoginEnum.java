@@ -29,7 +29,11 @@ public enum LoginEnum {
     IP_CHANGE_MAX_NUM("当日登录IP改变的最大次数"),
     NO_LOGIN_MAX_DAYS("未登录的最大天数，风控权限检测使用"),
     MAX_REWARD_NOW("当日最大奖金"),
-    ON_DUTY("值班人");
+    ON_DUTY("值班人"),
+    LAST_BRUST_MESSAGE("爆奖活动最新中奖消息"),
+    
+    
+    ;
 
     private String desc;
 

@@ -608,6 +608,13 @@ public class DateUtils {
 
 	}
 
+	public static Date formateFullTimeToDate(String formateTime) throws ParseException {
+
+		SimpleDateFormat df = new SimpleDateFormat(TIME_FULL_STR);
+
+		return df.parse(formateTime);
+
+	}
 	/**
 	 * 格式化时间 yyyyMMddHHmmss
 	 *

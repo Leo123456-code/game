@@ -107,8 +107,14 @@ public class MqConstant {
     //首充送活动单派发队列
     public static final String GAME_DISTRIBUTE_SCXACT_RECORD = "game-distribute-scxact-record";
     
+    //奖金池抽成订单增加金额队列
     public static final String GAME_PRIZE_POOL_AMOUNT_INCRESE = "game_prize_pool_amount_increse_queue";
+    
+    //活动扣减待消费额，解冻冻结余额
+    public static final String GAME_ACTIVITY_WITH_DRAW_REDUCE_QUEUE = "game_activity_with_draw_reduce_queue";
 
+    //活动扣减待消费额实际执行队列，
+    public static final String GAME_REAL_ACTIVITY_WITH_DRAW_REDUCE_COMPUTE_QUEUE = "real_activity_with_draw_reduce_compute_queue";
     //----------------------------------------------------------------------------------------
     //单笔充值金额，Vip等级提升监听
     public static final String GAME_VIP_SINGLE_DEPOSIT = "game-vip-single-deposit-queue";

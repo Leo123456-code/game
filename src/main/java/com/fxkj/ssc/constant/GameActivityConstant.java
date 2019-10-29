@@ -34,6 +34,11 @@ public class GameActivityConstant {
 	public static final int lotter_Order = 0;
 	/**游戏订单类型*/
 	public static final int game_Order = 1;
+	
+	/**虚拟中奖类型*/
+	public static final int system_Order = 2;
+	
+	
     
 	/**领奖状态，-1表示人工审核未通过，-2过期未领取, 1表示人工审核中，2表示已派发未领取，3表示已审核已领取*/
 	public static final int brust_bouns_status_review = 1;

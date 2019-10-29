@@ -12,7 +12,6 @@ package com.fxkj.ssc.constant;
 */
 public class GameActivityConstant {
 
-	
 	/** 大爆奖活动的消息前台用户UserId*/
 	public static final Long brust_Activity = -10000L;
 	

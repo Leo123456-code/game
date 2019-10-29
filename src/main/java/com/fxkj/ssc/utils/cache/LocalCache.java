@@ -38,11 +38,11 @@ public class LocalCache {
      * @param expire 过期时间，单位：毫秒， 0表示无限长
      */
     @SuppressWarnings("rawtypes")
-	public synchronized static void put(String key, Object data, long expire) {
+	public synchronized static void put(String key, Object data, long expireSeconds) {
         //清除原键值对
         LocalCache.remove(key);
         //设置过期时间
-        if (expire > 0) {
+        if (expireSeconds > 0) {
             Future future = executor.schedule(new Runnable() {
                 @Override
                 public void run() {
@@ -51,7 +51,7 @@ public class LocalCache {
                         map.remove(key);
                     }
                 }
-            }, expire, TimeUnit.MILLISECONDS);
+            }, expireSeconds, TimeUnit.SECONDS);
             map.put(key, new Entity(data, future));
         } else {
             //不设置过期时间

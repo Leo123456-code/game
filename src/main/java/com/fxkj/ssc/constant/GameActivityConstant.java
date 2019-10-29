@@ -60,4 +60,8 @@ public class GameActivityConstant {
 	public static final int BY_HAND_WAY = 1;
 	
 	public static final int SYSTEM_WAY=0;
+	//游戏流水
+	public static final String ORDER_WATER = "order_water";
+	//订单流水
+	public static final String ORDER_INFO = "order_info";
 }

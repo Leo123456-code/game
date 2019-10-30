@@ -149,8 +149,8 @@ public class MqConstant {
     public static final String GAME_RECHARGE_STATUS = "game_recharge_status";
     //查询提现订单状态mq
     public static final String GAME_WITHDRAW_STATUS = "game_withdraw_status";
-
-
+    //进入游戏需要转账mq
+    public static final String GAME_STARTGAME_TRANSFER = "game_startgame_transfer";
 
 
 }

@@ -3,6 +3,8 @@
  */
 package com.fxkj.ssc.constant;
 
+
+
 /**  
 * @ClassName: GameActivityConstant  
 * @Description: TODO(这里用一句话描述这个类的作用)  
@@ -68,4 +70,7 @@ public class GameActivityConstant {
 	public static final String ORDER_WATER = "order_water";
 	//订单流水
 	public static final String ORDER_INFO = "order_info";
+	
+	
+	
 }

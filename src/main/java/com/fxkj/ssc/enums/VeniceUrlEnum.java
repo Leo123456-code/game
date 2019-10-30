@@ -38,7 +38,9 @@ public enum VeniceUrlEnum {
 
     GET_BET_FLOW_DETAIL("/getBetFlowDetail", "获取用户投注流水明细"),
 
-    GET_USER_DAY_REPORT("/getUserDayReport", "获取用户日投注记录结算");
+    GET_USER_DAY_REPORT("/getUserDayReport", "获取用户日投注记录结算"),
+	
+	GET_ORDER_STATUS("/getOrderStatus", "获取用户日投注记录结算");
 
     private String url;
     private String desc;

@@ -140,6 +140,12 @@ public class MqConstant {
     public static final String GAME_USER_GAME_BALANCE = "game_user_game_balance";
     //威尼斯提现mq
     public static final String GAME_WITHDRAW_AGENT = "game_withdraw_agent";
+    //查询查询所有充提订单
+    public static final String GAME_TRANSFER_STATUS = "game_transfer_status";
+    //查询充值订单状态mq
+    public static final String GAME_RECHARGE_STATUS = "game_recharge_status";
+    //查询提现订单状态mq
+    public static final String GAME_WITHDRAW_STATUS = "game_withdraw_status";
 
 
 

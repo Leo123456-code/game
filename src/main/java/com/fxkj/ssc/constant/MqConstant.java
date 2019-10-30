@@ -5,6 +5,9 @@ public class MqConstant {
     //账户余额更新队列
     public static final String UPDATE_BALANCE_QUEUE = "update-balance-queue";
 
+    //消费量扣减计算队列
+    public static final String USER_CONSUME_QUEUE = "user-consume-queue";
+    
     //充值，提现队列开始-------------------------------------------------------------------------------
 
     //充值查询队列

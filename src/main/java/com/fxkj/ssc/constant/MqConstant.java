@@ -116,6 +116,8 @@ public class MqConstant {
     //活动扣减待消费额，解冻冻结余额
     public static final String GAME_ACTIVITY_WITH_DRAW_REDUCE_QUEUE = "game_activity_with_draw_reduce_queue";
 
+    //各种消费量使用的中继站队列
+    public static final String GAME_CONSUME_RELAY_POINT_QUEUE = "game_consume_relay_point_queue";
     //活动扣减待消费额实际执行队列，
     public static final String GAME_REAL_ACTIVITY_WITH_DRAW_REDUCE_COMPUTE_QUEUE = "real_activity_with_draw_reduce_compute_queue";
     //----------------------------------------------------------------------------------------

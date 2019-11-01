@@ -784,6 +784,23 @@ public class DateUtils {
 	}
 
 	/**
+	 * 获取指定日期的前几天
+	 * 
+	 * @param schedule
+	 * @param num
+	 * @return
+	 * @throws ParseException
+	 */
+	public static Date getSpecifiedDateSomeDaysAgo(Date schedule, Integer num) throws ParseException {
+		SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd");
+		Date dayTime = sf.parse(sf.format(schedule));
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(dayTime);
+		cal.add(Calendar.DATE, -num);
+		return cal.getTime();
+	}
+
+	/**
 	 * @Description: 获取指定的日期的前一天
 	 * @author:James
 	 *

@@ -17,7 +17,7 @@ public enum BanlanceChangeTypeEnum {
 
     CHONGZHI(1, "充值", true),
     QUKUAN(2, "提款申请", true),
-    ZHUANZHANG(3, "转账", true),
+	ZHUANZHANG(3, "转账", false),
     GOUMAI(4, "购买", false),
     CHEDAN(5, "撤单", false),
     ZHONGJIANG(6, "中奖", false),
@@ -25,8 +25,8 @@ public enum BanlanceChangeTypeEnum {
     FANDIAN(8, "返点", false),
     HOUTAI(9, "修正资金", true),
 	BJLTOSYS(10, "百家乐转账到系统", false),
-	BAIJIALEFS(11, "返水", true), // 百家乐返水
-	BAIJIALEFD(12, "返点", true), // 百家乐返点
+	BAIJIALEFS(11, "百家乐返水", false), // 百家乐返水
+	BAIJIALEFD(12, "百家乐返点", false), // 百家乐返点
 	BAIJIALHUODONG(13, "百家乐活动", false),
     HUODONGCAIJING(14, "活动彩金", true),
     QUKUANERROR(15, "提现失败退款", true),
@@ -87,9 +87,9 @@ public enum BanlanceChangeTypeEnum {
     DS_RECHARGE(70, "DS充值余额扣减", false),
     DS_WITHDRAW(71, "DS取款成功增加余额", false),
     DS_RECHARGE_ERROR(72, "DS充值失败退款", false),
-    VENICE_RECHARGE(73, "第三方游戏充值余额扣减", true),
-    VENICE_WITHDRAW(74, "第三方游戏取款成功增加余额", true),
-    VENICE_RECHARGE_ERROR(75, "第三方游戏充值失败退款", true),
+    VENICE_RECHARGE(73, "第三方游戏充值余额扣减", false),
+    VENICE_WITHDRAW(74, "第三方游戏取款成功增加余额", false),
+    VENICE_RECHARGE_ERROR(75, "第三方游戏充值失败退款", false),
 
 
     RED_ENVELOPE_RECEIVED(76, "领取群红包增加余额", false),

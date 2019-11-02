@@ -136,7 +136,7 @@ public class HttpHandler {
 			
 			url = URLDecoder.decode(url, "UTF-8");
 			RequestConfig requestConfig = RequestConfig.custom()
-					.setSocketTimeout(5000).setConnectTimeout(5000).build();// 设置请求和传输超时时间
+					.setSocketTimeout(10000).setConnectTimeout(10000).build();// 设置请求和传输超时时间
 			method.setConfig(requestConfig);
 			result = httpClient.execute(method);
 			/** 请求发送成功，并得到响应 **/

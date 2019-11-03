@@ -17,29 +17,29 @@ public enum BanlanceChangeTypeEnum {
 
     CHONGZHI(1, "充值", true),
     QUKUAN(2, "提款申请", true),
-	ZHUANZHANG(3, "转账", false),
+    ZHUANZHANG(3, "转账", false),
     GOUMAI(4, "购买", false),
     CHEDAN(5, "撤单", false),
     ZHONGJIANG(6, "中奖", false),
-	XIAOFEILIANG(7, "消费量确认", false),
+    XIAOFEILIANG(7, "消费量确认", false),
     FANDIAN(8, "返点", false),
     HOUTAI(9, "修正资金", true),
-	BJLTOSYS(10, "百家乐转账到系统", false),
-	BAIJIALEFS(11, "百家乐返水", false), // 百家乐返水
-	BAIJIALEFD(12, "百家乐返点", false), // 百家乐返点
-	BAIJIALHUODONG(13, "百家乐活动", false),
+    BJLTOSYS(10, "百家乐转账到系统", false),
+    BAIJIALEFS(11, "百家乐返水", false), // 百家乐返水
+    BAIJIALEFD(12, "百家乐返点", false), // 百家乐返点
+    BAIJIALHUODONG(13, "百家乐活动", false),
     HUODONGCAIJING(14, "活动彩金", true),
     QUKUANERROR(15, "提现失败退款", true),
     OWNERQUKUAN(16, "上级取款", false),
     LOWNERCHONGZ(17, "下级充值", false),
-	QIANGHONGBAO(18, "抢红包", false),
+    QIANGHONGBAO(18, "抢红包", false),
     RIFENHONG(19, "日分红", false),
     RIGONGZI(20, "日工资", false),
     QIYUERIGONGZI(21, "契约日工资", false),
     QIYUEFENHONG(22, "契约分红", false),
     PINGTAIFENHONG(23, "平台分红", false),
-    CHONGZSHOUXUFEI(24, "充值手续费", false),
-    TIXIANSHOUXUFEI(25, "提现手续费", false),
+    CHONGZSHOUXUFEI(24, "充值手续费", true),
+    TIXIANSHOUXUFEI(25, "提现手续费", true),
     XIUZCAIPFENHONG(26, "修正彩票分红", false),
     XIUZZHENRENFENHONG(27, "修正真人分红", false),
     XIUZTIYUFENHONG(28, "修正体育分红", false),
@@ -60,8 +60,8 @@ public enum BanlanceChangeTypeEnum {
     XIUZXIAOFEISONG(43, "修正消费送", false),
     XIUZSANJIKUISHUN(44, "修正三级亏损佣金", false),
     TIXIANQUERENDAOZHANG(45, "提现确认到账", true),
-	SYSTOBJL(46, "系统转百家乐", false),
-	SYSTOBJLTUIKUAN(47, "系统转百家乐失败退款", false),
+    SYSTOBJL(46, "系统转百家乐", false),
+    SYSTOBJLTUIKUAN(47, "系统转百家乐失败退款", false),
     RIYONGJIN(48, "日佣金", false),
     XIUZHENRIYONGJIN(49, "修正日佣金", false),
     SYSTOJF(50, "系统转久发", false),
@@ -74,7 +74,7 @@ public enum BanlanceChangeTypeEnum {
     XZQUKUAN(57, "修正取款", true),
     XIUZEHNGJIANGJIN(58, "修正奖金", false),
     XIUZHENGFANDIAN(59, "修正返点", false),
-	ROLLBACKPRINCIPAL(60, "恢复本金", false),
+    ROLLBACKPRINCIPAL(60, "恢复本金", false),
     JIUFACONSUMENUM(61, "久发游戏消费量", false),
     JIUFACONPUMPNUM(62, "久发游戏抽水量", false),
     QIYUERIGONGZIPAIFAXIAJI(63, "契约日工资派发下级", false),
@@ -91,14 +91,17 @@ public enum BanlanceChangeTypeEnum {
     VENICE_WITHDRAW(74, "第三方游戏取款成功增加余额", false),
     VENICE_RECHARGE_ERROR(75, "第三方游戏充值失败退款", false),
 
-
     RED_ENVELOPE_RECEIVED(76, "领取群红包增加余额", false),
     RED_ENVELOPE_DEDUCTION_BANLANCE(77, "发群红包扣减余额", false),
     RED_ENVELOPE_EXPIRED_NOT_RECEIVED(78, "群红包24小时未领取自动退款增加余额", false),
-    VENICE_GAME_WATER(79, "Venice游戏返水", true);
+    VENICE_GAME_WATER(79, "Venice游戏返水", true),
+    VENICE_SEAMLESS_BET(80, "Venice游戏下单:", false),
+    VENICE_SEAMLESS_PAY(81, "Venice游戏派彩:", false),
+    VENICE_SEAMLESS_CANCEL(82, "Venice游戏撤单:", false),
+    VENICE_SEAMLESS_SETTLEMENTL(83, "Venice游戏结算:", false),;
 
     private Integer code;
-    private String desc;
+    private String  desc;
     private boolean isUsed;
 
     private BanlanceChangeTypeEnum(Integer code, String desc, Boolean isUsed) {

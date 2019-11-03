@@ -73,8 +73,8 @@ public enum PlatformConfigEnum {
 	IS_REGISTEBY_QQ("IS_REGISTEBY_QQ","是否必填qq号"),
 	IS_AUTO_MATIC_CHANGE_LOTTER("IS_AUTO_MATIC_CHANGE_LOTTER","是否自动转义采集彩种代码"),
 	AUDIT_WITHDRAW_VOICE("AUDIT_WITHDRAW_VOICE","审核提升声音"),
-	RECHARGE_CONSUME_RATIO("RECHARGE_CONSUME_RATIO","充值消费比率");
-	
+	RECHARGE_CONSUME_RATIO("RECHARGE_CONSUME_RATIO","充值消费比率"),
+	SUPER_REWARD_RANDOM_NUMBER("SUPER_REWARD_RANDOM_NUMBER","超级彩金用户随机中奖金额区间");
 	
     private String code;
     private String desc;

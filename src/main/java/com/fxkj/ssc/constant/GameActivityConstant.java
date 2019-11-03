@@ -26,11 +26,20 @@ public class GameActivityConstant {
 	public static final String GAME_BRUST_ACTIVITY_CODE ="brustActivity";
 	
 	public static final String GAME_SCS_ACTIVITY_CODE ="scsActivity";
+	
+	/**充值送的分组model_code代码*/
+	public static final String GAME_SCS_MODEL_CODE = "czs";
+	
 	/** 奖池当前总余额Paramkey*/
 	public static final String PPCURRENTAMOUNT = "ppCurrentAmount";
 	
 	/** 大爆奖当前派发总金额 Paramkey*/
 	public static final String JJTOTALAMOUNT = "jjTotalAmount";
+	
+	/**充值消费提现限制比例*/
+	public static final String RECHARGE_CONSUME_RATIO = "RECHARGE_CONSUME_RATIO";
+	
+	
 	
 	/**余额账户类型*/
 	public static final int balance_account = 0;

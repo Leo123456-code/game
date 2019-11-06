@@ -18,7 +18,9 @@ public enum VeniceBaccaratCodeEnum {
     AG_GAMING(6, "AG", "ag游戏"),
     OG_GAMING(7, "OG", "og游戏"),
     KY_GAMING(8,"KY","开元棋牌游戏"),
-    SBO_GAMING(9,"SBO","SBO利计体育游戏");
+    SBO_GAMING(9,"SBO","SBO利计体育游戏"),
+	GPK_GAMING(10,"GPK","GPK游戏"),
+	;
     private Integer type;
     private String baccaratCode;
     private String description;

@@ -799,6 +799,24 @@ public class DateUtils {
 		cal.add(Calendar.DATE, -num);
 		return cal.getTime();
 	}
+	
+	public static String getSpecifiedDateWeekAgo(String schedule) throws ParseException {
+		SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd");
+		Date dayTime = sf.parse(schedule);
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(dayTime);
+		cal.add(Calendar.WEEK_OF_MONTH, -1);
+		return sf.format(cal.getTime());
+	}
+	
+	public static String getSpecifiedDateMonthAgo(String schedule) throws ParseException {
+		SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd");
+		Date dayTime = sf.parse(schedule);
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(dayTime);
+		cal.add(Calendar.MONTH ,-1);
+		return sf.format(cal.getTime());
+	}
 
 	/**
 	 * @Description: 获取指定的日期的前一天
@@ -879,18 +897,23 @@ public class DateUtils {
 		}
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ParseException {
 		
-		Calendar cal = Calendar.getInstance();
-		cal.setTime(new Date());
-		cal.set(Calendar.HOUR_OF_DAY, 0);
-		cal.set(Calendar.MINUTE, 0);
-		cal.set(Calendar.SECOND, 0);
-		cal.set(Calendar.MILLISECOND, 0);
-		SimpleDateFormat sf = new SimpleDateFormat(DATE_FULL_STR);
-		
-		System.out.println(sf.format(cal.getTime()));
+//		Calendar cal = Calendar.getInstance();
+//		cal.setTime(new Date());
+//		cal.set(Calendar.HOUR_OF_DAY, 0);
+//		cal.set(Calendar.MINUTE, 0);
+//		cal.set(Calendar.SECOND, 0);
+//		cal.set(Calendar.MILLISECOND, 0);
+//		SimpleDateFormat sf = new SimpleDateFormat(DATE_FULL_STR);
+//		
+//		System.out.println(sf.format(cal.getTime()));
 	
+		
+		System.out.println(getSpecifiedDateWeekAgo(DateUtils.formateDate(new Date())));
+		
+		System.out.println(getSpecifiedDateMonthAgo(DateUtils.formateDate(new Date())));
+		
 //		SimpleDateFormat df = new SimpleDateFormat("HH:mm");//设置日期格式
 //	    Date now =null;
 //	    Date beginTime = null;

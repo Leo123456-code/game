@@ -800,6 +800,9 @@ public class DateUtils {
 		return cal.getTime();
 	}
 	
+	
+	
+	
 	public static String getSpecifiedDateWeekAgo(String schedule) throws ParseException {
 		SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd");
 		Date dayTime = sf.parse(schedule);
@@ -835,7 +838,17 @@ public class DateUtils {
 		Date yesterDay = cal.getTime();
 		return yesterDay;
 	}
-
+	
+	public static String getScheduleYesterDay(String schedule) throws ParseException {
+		SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd");
+		Date dayTime = sf.parse(schedule);
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(dayTime);
+		cal.add(Calendar.DATE, -1);
+		
+		return sf.format(cal.getTime());
+	}
+	
 	public static String dateToString(Date formateTime, String fomat) {
 
 		SimpleDateFormat df = new SimpleDateFormat(fomat);

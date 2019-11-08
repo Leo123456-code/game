@@ -28,6 +28,7 @@ public class GameActivityConstant {
 	
 	public static final String GAME_SCS_ACTIVITY_CODE ="scsActivity";
 	
+	
 	/**充值送的分组model_code代码*/
 	public static final String GAME_SCS_MODEL_CODE = "czs";
 	
@@ -53,8 +54,12 @@ public class GameActivityConstant {
 	/**虚拟中奖类型*/
 	public static final int system_Order = 2;
 	
+	/**系统随机用户的最小位数*/
+	public static final int min = 8;
 	
-    
+	/**系统随机用户的最大位数*/
+	public static final int max = 10;
+	
 	/**领奖状态，-1表示人工审核未通过，-2过期未领取, 1表示人工审核中，2表示已派发未领取，3表示已审核已领取*/
 	public static final int brust_bouns_status_review = 1;
 	

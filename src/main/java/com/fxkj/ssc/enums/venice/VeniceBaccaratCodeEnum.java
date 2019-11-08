@@ -23,6 +23,7 @@ public enum VeniceBaccaratCodeEnum {
 	JDB_GAMING(11,"JDB","JDB游戏"),
 	VR_GAMING(12,"VR","VR游戏"),
 	PG_GAMING(13,"PG","PG游戏"),
+	TXQP_GAMING(13,"TXQP","天下棋牌"),
 	;
     private Integer type;
     private String baccaratCode;

@@ -156,6 +156,10 @@ public class MqConstant {
     //进入游戏需要转账mq
     public static final String GAME_STARTGAME_TRANSFER = "game_startgame_transfer";
 
-
+    
+    //查询威尼斯代理统计报表
+    public static final String GET_AGENT_COLLECTION = "get_agent_collection";
+    public static final String GET_USER_COLLECTION = "get_user_collection";
+    public static final String GET_ORDER_DETAIL = "get_order_detail";
 }
 

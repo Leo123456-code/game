@@ -163,5 +163,8 @@ public class MqConstant {
     public static final String GET_ORDER_DETAIL = "get_order_detail";
     //定时任务发送拉取报表mq
     public static final String GET_VENICE_REPORT = "get_venice_report";
+
+	// 查询最大在线会员人数
+	public static final String GET_ONLINE_MEMBER_QUANTITY = "get_online_member_quantity";
 }
 

@@ -75,6 +75,7 @@ public enum PlatformConfigEnum {
 	AUDIT_WITHDRAW_VOICE("AUDIT_WITHDRAW_VOICE","审核提示声音"),
 	RECHARGE_CONSUME_RATIO("RECHARGE_CONSUME_RATIO","充值消费比率"),
 	IS_PHONE_CODE("IS_PHONE_CODE", "是否开启手机验证码"),
+	IS_MOBILE_NUMBER_LOGIN("IS_MOBILE_NUMBER_LOGIN", "是否开启手机一键登录"),
 	SUPER_REWARD_RANDOM_NUMBER("SUPER_REWARD_RANDOM_NUMBER","超级彩金用户随机中奖金额区间");
 	
     private String code;

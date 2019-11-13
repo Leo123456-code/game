@@ -579,7 +579,26 @@ public class DateUtils {
 		return df.format(formateTime);
 
 	}
+	
+	/**
+	 * 格式化时间 yyyy-MM-dd
+	 *
+	 * @param formateTime
+	 * @return
+	 * @throws ParseException 
+	 */
+	public static String formateDate(String formateTime) throws ParseException {
 
+		
+		SimpleDateFormat sdf = new SimpleDateFormat(DATE_FULL_STR);
+		Date parse = sdf.parse(formateTime);
+		SimpleDateFormat df = new SimpleDateFormat(DATE_SMALL_STR);
+
+		return df.format(parse);
+
+	}
+
+	
 	/**
 	 * 格式化时间 yyyy-MM
 	 *
@@ -911,7 +930,7 @@ public class DateUtils {
 	}
 
 	public static void main(String[] args) throws ParseException {
-		
+		System.out.print(formateDate("2019-11-13 00:00:00"));
 //		Calendar cal = Calendar.getInstance();
 //		cal.setTime(new Date());
 //		cal.set(Calendar.HOUR_OF_DAY, 0);

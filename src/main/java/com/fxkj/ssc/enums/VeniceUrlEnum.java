@@ -39,15 +39,15 @@ public enum VeniceUrlEnum {
     GET_BET_FLOW_DETAIL("/getBetFlowDetail", "获取用户投注流水明细"),
 
     GET_USER_DAY_REPORT("/getUserDayReport", "获取用户日投注记录结算"),
-	
-	GET_ORDER_STATUS("/getOrderStatus", "获取用户日投注记录结算"),
-	
-	
-	
-	GET_AGENT_COLLECTION("/getAgentCollection", "代理投注结算"),
-	GET_USER_COLLECTION("/getUserCollection", "用户投注结算"),
-	GET_ORDER_DETAIL("/getOrderDetail", "游戏详情记录"),
-	;
+
+    GET_ORDER_STATUS("/getOrderStatus", "获取用户日投注记录结算"),
+
+    GET_AGENT_COLLECTION("/getAgentCollection", "代理投注结算"),
+    GET_USER_COLLECTION("/getUserCollection", "用户投注结算"),
+    GET_ORDER_DETAIL("/getOrderDetail", "游戏详情记录"),
+
+    GET_WATER("", "获取返水"),
+    ;
 
     private String url;
     private String desc;

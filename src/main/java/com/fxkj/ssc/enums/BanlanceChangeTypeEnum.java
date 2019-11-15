@@ -94,7 +94,7 @@ public enum BanlanceChangeTypeEnum {
     RED_ENVELOPE_RECEIVED(76, "领取群红包增加余额", false),
     RED_ENVELOPE_DEDUCTION_BANLANCE(77, "发群红包扣减余额", false),
     RED_ENVELOPE_EXPIRED_NOT_RECEIVED(78, "群红包24小时未领取自动退款增加余额", false),
-    VENICE_GAME_WATER(79, "Venice游戏返水", true),
+    VENICE_GAME_WATER(79, "Venice游戏返水", false),
     VENICE_SEAMLESS_BET(80, "Venice游戏下单:", false),
     VENICE_SEAMLESS_PAY(81, "Venice游戏派彩:", false),
     VENICE_SEAMLESS_CANCEL(82, "Venice游戏撤单:", false),

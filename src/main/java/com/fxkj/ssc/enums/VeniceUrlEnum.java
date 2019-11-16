@@ -46,7 +46,7 @@ public enum VeniceUrlEnum {
     GET_USER_COLLECTION("/getUserCollection", "用户投注结算"),
     GET_ORDER_DETAIL("/getOrderDetail", "游戏详情记录"),
 
-    GET_WATER("", "获取返水"),
+    GET_WATER("/getRebateWaterStatus", "获取返水"),
     ;
 
     private String url;

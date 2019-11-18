@@ -16,7 +16,7 @@ public enum StatusEnum {
     BLACKLIST(2, "加入黑名单"),
     JIN_YONG(3, "禁用"),
     DONG_JIE(4, "永久冻结"),
-
+	PENDING_REVIEW(5, "待审核"),
     ;
 
     private Integer code;

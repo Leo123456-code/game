@@ -78,6 +78,7 @@ public enum PlatformConfigEnum {
 	IS_MOBILE_NUMBER_LOGIN("IS_MOBILE_NUMBER_LOGIN", "是否开启手机一键登录"),
 	IS_PASSWORD_PHONE_CODE("IS_PASSWORD_PHONE_CODE", "是否开启修改密码手机验证码"),
 	IS_WITHDRAWAL_PHONE_CODE("IS_WITHDRAWAL_PHONE_CODE", "是否开启取款验证手机码"),
+	IS_AGENT_REGISTRATION("IS_AGENT_REGISTRATION", "是否开启代理注册"),
 	SUPER_REWARD_RANDOM_NUMBER("SUPER_REWARD_RANDOM_NUMBER","超级彩金用户随机中奖金额区间");
 	
     private String code;

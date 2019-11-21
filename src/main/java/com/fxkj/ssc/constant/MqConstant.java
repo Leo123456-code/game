@@ -121,6 +121,8 @@ public class MqConstant {
 	// 活动扣减待消费额实际执行队列，
 	public static final String GAME_REAL_ACTIVITY_WITH_DRAW_REDUCE_COMPUTE_QUEUE = "real_activity_with_draw_reduce_compute_queue";
 
+	// 代理返佣的执行队列，
+	public static final String GAME_AGENT_REBATE_EXECUTE_QUEUE = "game_agent_rebate_execute_queue";
 	// 代理返佣的生成队列，
 	public static final String GAME_AGENT_REBATE_GENERATE_QUEUE = "game_agent_rebate_generate_queue";
 

@@ -23,7 +23,7 @@ public enum BanlanceChangeTypeEnum {
     ZHONGJIANG(6, "中奖", false),
     XIAOFEILIANG(7, "消费量确认", false),
     FANDIAN(8, "返点", false),
-    HOUTAI(9, "修正资金", true),
+	HOUTAI(9, "修正资金", false),
     BJLTOSYS(10, "百家乐转账到系统", false),
     BAIJIALEFS(11, "百家乐返水", false), // 百家乐返水
     BAIJIALEFD(12, "百家乐返点", false), // 百家乐返点

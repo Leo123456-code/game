@@ -28,6 +28,8 @@ public class GameActivityConstant {
 	public static final String GAME_SCS_ACTIVITY_CODE ="scsActivity";
 	
 	public static final String GAME_AGENT_ACTIVITY_CODE ="agentRebate";
+	
+	public static final String GAME_XFS_MODEL_CODE ="xfs";
 	/**充值送的分组model_code代码*/
 	public static final String GAME_SCS_MODEL_CODE = "czs";
 	

@@ -95,6 +95,8 @@ public class MqConstant {
 	// 消费送
 	public static final String GAME_CONSUMER_DELIVERY = "game_consumer_delivery";
 
+	//子消费送活动，实际活动生成队列
+	public static final String GAME_XFS_CHILDREN_CONSUMER_DELIVERY = "game_xfs_children_delivery";
 	// 派发消费送
 	public static final String GAME_DISTRIBUTE_CONSUMER_DELIVERY = "game_distribute_consumer_delivery";
 

@@ -31,6 +31,7 @@ public enum LoginEnum {
     MAX_REWARD_NOW("当日最大奖金"),
     ON_DUTY("值班人"),
     LAST_BRUST_MESSAGE("爆奖活动最新中奖消息"),
+    LAST_CZ_BRUST_MESSAGE("爆奖活动最新中奖消息"),
     ADD_ADVERTISE_MESSAGE("新增公告消息"),
 	PHONE_CODE("手机验证码")
     

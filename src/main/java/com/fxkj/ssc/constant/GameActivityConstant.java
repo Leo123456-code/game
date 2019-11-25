@@ -20,10 +20,19 @@ public class GameActivityConstant {
 	/** 大爆奖活动的消息后台用户UserId*/
 	public static final Long brust_back_userId = -20000L;
 	
+	/** 大爆奖活动的消息前台用户UserId*/
+	public static final Long brust_cz_Activity = -11000L;
+	
+	/** 大爆奖活动的消息后台用户UserId*/
+	public static final Long brust_cz_back_userId = -21000L;
+	
 	/** 公告的消息前台用户UserId*/
 	public static final Long advertise_userId = -30000L;
 	
 	public static final String GAME_BRUST_ACTIVITY_CODE ="brustActivity";
+	
+	/**充值爆大奖活动的消息后台用户*/
+	public static final String GAME_CZ_BRUST_ACTIVITY_CODE ="czBrustAct";
 	
 	public static final String GAME_SCS_ACTIVITY_CODE ="scsActivity";
 	

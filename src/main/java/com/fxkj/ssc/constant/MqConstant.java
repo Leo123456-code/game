@@ -100,12 +100,17 @@ public class MqConstant {
 	// 派发消费送
 	public static final String GAME_DISTRIBUTE_CONSUMER_DELIVERY = "game_distribute_consumer_delivery";
 
-	// 生成爆奖计划队列
+	//定时任务爆奖计划队列
 	public static final String GENERATION_PLAN_QUEUE = "generation-brust-plan-queue";
-
-	// 爆奖执行队列
+	
+	//爆奖计划生成队列
+	public static final String GENERATION_PLAN_EXECUTE_QUEUE = "generation_plan_execute_queue";
+	
+	// 爆奖中奖分发队列
 	public static final String BRUST_START_QUEUE = "brust_start_queue";
 
+	// 爆奖中奖分发队列
+	public static final String BRUST_START_EXECUTE_QUEUE = "brust_start_execute_queue";
 	// 首充送活动单生成队列
 	public static final String GAME_GENERATION_SCXACT_RECORD = "game-generation-scxact-record";
 

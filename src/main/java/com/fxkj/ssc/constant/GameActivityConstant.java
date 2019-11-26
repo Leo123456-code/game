@@ -60,7 +60,9 @@ public class GameActivityConstant {
 	public static final int lotter_Order = 0;
 	/**游戏订单类型*/
 	public static final int game_Order = 1;
-	
+
+	/**充值订单类型*/
+	public static final int recharge_Order = 3;
 	/**虚拟中奖类型*/
 	public static final int system_Order = 2;
 	

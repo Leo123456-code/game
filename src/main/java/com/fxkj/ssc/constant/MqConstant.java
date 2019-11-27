@@ -120,6 +120,9 @@ public class MqConstant {
 	// 奖金池抽成订单增加金额队列
 	public static final String GAME_PRIZE_POOL_AMOUNT_INCRESE = "game_prize_pool_amount_increse_queue";
 
+	// 奖金池抽成订单增加金额队列
+	public static final String GAME_CZ_PRIZE_POOL_AMOUNT_INCRESE = "game_cz_prize_pool_amount_increse_queue";
+	
 	// 活动扣减待消费额，解冻冻结余额
 	public static final String GAME_ACTIVITY_WITH_DRAW_REDUCE_QUEUE = "game_activity_with_draw_reduce_queue";
 

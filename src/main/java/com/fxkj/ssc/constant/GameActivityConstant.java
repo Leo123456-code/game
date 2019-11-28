@@ -101,6 +101,10 @@ public class GameActivityConstant {
 	//订单流水
 	public static final String ORDER_INFO = "order_info";
 	
+	//消费奖金池
+	public static final Integer CONSUME_POOL = 0;
+	//充值奖金池
+	public static final Integer RECHARGE_POOL = 1;
 	
 	
 }

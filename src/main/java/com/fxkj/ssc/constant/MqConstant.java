@@ -145,8 +145,8 @@ public class MqConstant {
 	// vip晋级彩金队列
 	public static final String GAME_VIP_RISEBONS_QUEUE = "game-vip-riseBons-queue";
 
-	// Vip月累计充值检测
-	public static final String GAME_VIP_MONTH_GRAND_QUEUE = "game-vip-month-grand-queue";
+	// Vip永久累计充值检测
+	public static final String GAME_VIP_FOREVER_GRAND_QUEUE = "game-vip-forever-grand-queue";
 
 	// 转运金
 	public static final String GAME_VIP_CHANGE_LUCK_QUEUE = "game-vip-change-luck-queue";

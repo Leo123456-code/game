@@ -29,12 +29,18 @@ public class GameActivityConstant {
 	/** 公告的消息前台用户UserId*/
 	public static final Long advertise_userId = -30000L;
 	
+	public static final Long brust_unVliad = -31000L;
+	
+	public static final Long brust_cz_unVliad = -32000L;
+	
 	public static final String GAME_BRUST_ACTIVITY_CODE ="brustActivity";
 	
 	/**充值爆大奖活动的消息后台用户*/
 	public static final String GAME_CZ_BRUST_ACTIVITY_CODE ="czBrustAct";
 	
 	public static final String GAME_SCS_ACTIVITY_CODE ="scsActivity";
+	
+	public static final String GAME_CZS_ACTIVITY_CODE ="czsActivity";
 	
 	public static final String GAME_AGENT_ACTIVITY_CODE ="agentRebate";
 	
@@ -73,6 +79,8 @@ public class GameActivityConstant {
 	public static final int max = 10;
 	
 	/**领奖状态，-1表示人工审核未通过，-2过期未领取, 1表示人工审核中，2表示已派发未领取，3表示已审核已领取*/
+	public static final int brust_invalid_state = -3;
+	
 	public static final int brust_bouns_status_review = 1;
 	
 	public static final int brust_bouns_status_distributed = 2;

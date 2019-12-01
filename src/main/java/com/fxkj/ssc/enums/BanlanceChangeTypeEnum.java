@@ -152,4 +152,14 @@ public enum BanlanceChangeTypeEnum {
         this.isUsed = isUsed;
     }
 
+	public static String getDesc(Integer code) {
+		String changTypeName = "";
+		BanlanceChangeTypeEnum[] values = BanlanceChangeTypeEnum.values();
+		for (BanlanceChangeTypeEnum changeType : values) {
+			if (changeType.getCode().equals(code)) {
+				changTypeName = changeType.getDesc();
+			}
+		}
+		return changTypeName;
+	}
 }

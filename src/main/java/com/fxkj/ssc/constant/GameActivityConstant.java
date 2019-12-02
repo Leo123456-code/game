@@ -113,6 +113,9 @@ public class GameActivityConstant {
 	public static final Integer CONSUME_POOL = 0;
 	//充值奖金池
 	public static final Integer RECHARGE_POOL = 1;
-	
+	//真实派发类型
+	public static final Integer REAL_DISTRIBUTE = 1;
+	//虚拟派发类型
+	public static final Integer VIRTUAl_DISTRIBUTE = 2;
 	
 }

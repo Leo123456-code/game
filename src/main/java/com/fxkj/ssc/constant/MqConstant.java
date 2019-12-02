@@ -187,4 +187,7 @@ public class MqConstant {
 	public static final String VENICE_WATER_GENERATE = "venice-water-generate";
 
 	public static final String VENICE_WATER_DISTRIBUTE = "venice-water-distribute";
+	
+	//socket消息发送队列
+	public static final String SOCKET_MSG_QUEUE = "socket-msg-queue";
 }

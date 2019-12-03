@@ -113,9 +113,30 @@ public class GameActivityConstant {
 	public static final Integer CONSUME_POOL = 0;
 	//充值奖金池
 	public static final Integer RECHARGE_POOL = 1;
+	
+	
 	//真实派发类型
 	public static final Integer REAL_DISTRIBUTE = 1;
-	//虚拟派发类型
+	
+    //虚拟派发类型
 	public static final Integer VIRTUAl_DISTRIBUTE = 2;
 	
+	//奖金池重新摇奖操作
+	public static final Integer POOL_OPERATE_RESTART = 1;
+	
+	//奖金池公示操作
+	public static final Integer POOL_OPERATE_PUBLIC = 2;
+	
+	//奖金池开奖操作
+    public static final Integer POOL_OPERATE_DRAW = 3;
+    
+    //奖金池抽水操作
+    public static final Integer POOL_OPERATE_PUMPING = 4;
+    
+    //奖金池人为修改余额操作
+    public static final Integer POOL_OPERATE_MANNUL_CURRENT = 5;
+    
+    //奖金池人为修改基础余额操作
+    public static final Integer POOL_OPERATE_MANNUL_BASE = 6;
+    
 }

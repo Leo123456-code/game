@@ -154,6 +154,9 @@ public class MqConstant {
 	// vip自动降级检测
 	public static final String GAME_VIP_DEMOTED_QUEUE = "game-vip-demoted-queue";
 
+	//vip永久累计消费量检测
+	public static final String GAME_VIP_FOREVER_AMOUNT_QUEUE = "game-vip-forever-amount-queue";
+	
 	// 活动自动过期
 	public static final String GAME_EVENT_EXPIRED = "game_event_expired_queue";
 	// ----------------------------------------------------------------------------------------

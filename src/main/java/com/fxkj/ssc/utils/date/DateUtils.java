@@ -8,7 +8,11 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.TimeZone;
+
+import net.sf.json.JSON;
 
 /**
  * 日期处理相关工具类
@@ -82,6 +86,68 @@ public class DateUtils {
 		return cal.get(Calendar.DAY_OF_MONTH) == 1;
 	}
 	
+	/**判断系统当前是否当月的特定第几天 james*/
+	public static boolean comfirmMonthSpecificDay(Date currentDate,Integer day) {
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(currentDate);
+		return cal.get(Calendar.DAY_OF_MONTH) == day;
+	}
+	
+	/**获取当前月1号和上个月1号 james */
+	public static Map<String,String> getCurrentMonthAndLastMonthFirstDay(String currentDate) throws ParseException {
+		String formateDate = DateUtils.formateDate(currentDate);
+		return getCurrentMonthAndLastMonthFirstDay(formateDate);
+	}
+	
+	/**获取当前月1号和上个月1号  james*/
+	public static Map<String,String> getCurrentMonthAndLastMonthFirstDay(Date currentDate) {
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(currentDate);
+		int year = cal.get(Calendar.YEAR);
+		int currentMonth = cal.get(Calendar.MONTH )+1;
+		
+		//当前月的1号
+		String currentMonthFirstDay = getSpecificDayDateByYearAndMonthAndDay(year,currentMonth,1);
+		
+		
+		//判断上一个月是否跨年
+		if(currentMonth == 1) {
+			year = year - 1;
+			currentMonth = 12;
+		}else {
+			currentMonth = currentMonth -1;
+		}
+		//上一个月的1号
+		String lastMonthFirstDay = getSpecificDayDateByYearAndMonthAndDay(year,currentMonth,1);
+		
+		
+		Map<String, String> resultMap = new HashMap<String, String>();
+		resultMap.put("currentMonthFirstDay",currentMonthFirstDay);
+		resultMap.put("lastMonthFirstDay", lastMonthFirstDay);
+		return resultMap;
+	}
+	
+	/**拼接特定的日期 james*/
+	public static String getSpecificDayDateByYearAndMonthAndDay(int year,int month,int day) {
+		
+		StringBuilder specificDayDateBuilder = new StringBuilder(year);
+		String specificMonth = "";
+		if(month >=10 ) {
+			specificMonth = ""+month;
+		}else {
+			specificMonth = "0"+month;
+		}
+		String specificDay = "";
+		if(day >=10) {
+			specificDay = ""+day;
+		}else {
+			specificDay = "0"+day;
+		}
+		specificDayDateBuilder = specificDayDateBuilder.append(year).append("-").append(specificMonth).append("-").append(specificDay);
+		return specificDayDateBuilder.toString();
+		
+	}
+	
 	/**获取下一个月1号的日期 james*/
 	public static String getNextFirstDay() {
 		
@@ -108,6 +174,7 @@ public class DateUtils {
 		return targetDate;
 	}
 	
+	
 	/**获取往后最近的1号的日期 james*/
 	public static String getLastFirstDay() {
 		if(comfirmMonthFirstDay()) {
@@ -115,6 +182,7 @@ public class DateUtils {
 		}
 		return getNextFirstDay();
 	}
+	
 	
 	/**
 	 * 使用用户格式提取字符串日期
@@ -772,17 +840,7 @@ public class DateUtils {
 		return dayTime;
 	}
 
-	// public static void main(String[] args) {
-	// try {
-	// String dayTime = getDayTime(true);
-	// System.out.println("系统昨天的日期是-----------------+" + dayTime);
-	// Date SystemCurrentTime = getSystemCurrentTime(new Date(), true);
-	// System.out.println("系统当前时间为" + new
-	// SimpleDateFormat("yyyy-MM-dd").format(SystemCurrentTime));
-	// } catch (ParseException e) {
-	// e.printStackTrace();
-	// }
-	// }
+	
 
     /**获取前两天的时间 */
     public static Date getTheDayBeforeYesterDay(Date schedule) throws ParseException{
@@ -947,36 +1005,11 @@ public class DateUtils {
 		
 		System.out.println(getSpecifiedDateMonthAgo(DateUtils.formateDate(new Date())));
 		
-//		SimpleDateFormat df = new SimpleDateFormat("HH:mm");//设置日期格式
-//	    Date now =null;
-//	    Date beginTime = null;
-//	    Date endTime = null;
-//	    try {
-//	        now = df.parse(df.format(new Date()));
-////	        now = df.parse("05:30");
-//	        beginTime = df.parse("06:00");
-//	        endTime = df.parse("20:00");
-//	    } catch (Exception e) {
-//	        e.printStackTrace();
-//	    }
-//	    Boolean flag = null;
-//	    //开始时间大于结束时间，在第二天，只需要判断当前时间大于开始时间，或者小于结束时间
-//	    if(beginTime.after(endTime)){
-//	    	flag = DateUtils.belongCalendar(now, endTime, beginTime);
-//	    	//true（不在提现范围）
-//	    	if(flag){
-//	    		System.out.println(false+"不在提现范围内");
-//	    	}else{
-//	    		System.out.println(true+"可提现");
-//	    	}
-//	    }else{
-//	    	flag = belongCalendar(now, beginTime, endTime);
-//	    	if(!flag){
-//	    		System.out.println(false+"不在提现时间内");
-//	    	}else{
-//	    		System.out.println(true+"可提现");
-//	    	}
-//	    }
+		Date currentDate = DateUtils.parse("2020-01-01", DateUtils.DATE_SMALL_STR);
+		Map<String, String> paramsMap = getCurrentMonthAndLastMonthFirstDay(currentDate);
+
+		
+		System.out.println(com.alibaba.fastjson.JSON.toJSONString(paramsMap));
 	}
     /**
      * @return

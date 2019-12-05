@@ -117,6 +117,12 @@ public class GameActivityConstant {
 	public static final String  AgentProgram_A = "A";
 	
 	public static final String  AgentProgram_B = "B";
+	
+	//代理返佣方案B结算周期类型 每月结算
+	public static final Integer MONTHLy_Bill= 1; 
+	
+	//代理返佣方案B结算周期类型 每周结算
+	public static final Integer WEEKLy_Bill= 0; 
 	//真实派发类型
 	public static final Integer REAL_DISTRIBUTE = 1;
 	

@@ -114,7 +114,9 @@ public class GameActivityConstant {
 	//充值奖金池
 	public static final Integer RECHARGE_POOL = 1;
 	
+	public static final String  AgentProgram_A = "A";
 	
+	public static final String  AgentProgram_B = "B";
 	//真实派发类型
 	public static final Integer REAL_DISTRIBUTE = 1;
 	

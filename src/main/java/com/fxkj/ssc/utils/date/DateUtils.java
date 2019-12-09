@@ -52,6 +52,20 @@ public class DateUtils {
 		}
 	}
 	
+	
+	/**拼接日期时间 */
+	public static Date generateDateTime(String dayTime,Date nowDate) throws Exception {
+		
+		SimpleDateFormat sf = new SimpleDateFormat(DateUtils.TIME_FULL_STR);
+		String format = sf.format(new Date());
+		String newTime = dayTime + " " + format;
+		sf = new SimpleDateFormat(DateUtils.DATE_FULL_STR);
+		Date parse = sf.parse(newTime);
+		
+		return parse;
+	}
+	
+	
 	/**获取下周日的日期 james*/
 	public static String getNextSunday(Date date) throws Exception {
 		Calendar cal = Calendar.getInstance();
@@ -70,6 +84,10 @@ public class DateUtils {
 		Calendar cal = Calendar.getInstance();
 		return cal.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY;
 	}
+	
+	
+	
+	
 	
 	/**获取往后最近的周日的日期 james*/
 	public static String getLastSunday() throws Exception {

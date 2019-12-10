@@ -56,6 +56,9 @@ public enum PlatformConfigEnum {
     MAX_API_COUNT("MAX_API_COUNT", "相同IP,单位时间，访问此次超过限制"),
     IP_MIDDLE_STATION("IP_MIDDLE_STATION", "采集中间站ip采集渠道配置"),
 
+    IP_OPERATION_SWITCH("IP_OPERATION_SWITCH","IP非法操作校验开关"),
+    
+    
     LOTTERY_FRONT_REGISTE_MIN("LOTTERY_FRONT_REGISTE_MIN", "彩票前台开户最小值"),
     USER_MAX_UPDATE_REBATE("USER_MAX_UPDATE_REBATE", "彩票前台升点最大值"),
     USER_MAX_REBATE("USER_MAX_REBATE", "彩票前台返点最大值"),

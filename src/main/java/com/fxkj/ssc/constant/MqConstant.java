@@ -157,6 +157,13 @@ public class MqConstant {
 	//vip永久累计消费量检测
 	public static final String GAME_VIP_FOREVER_AMOUNT_QUEUE = "game-vip-forever-amount-queue";
 	
+	//vip等级运算队列
+	public static final String GAME_VIP_COMPUTER_LEVEL_QUEUE = "game-vip-computer-level-queue";
+	
+	//用户vip等级升级队列
+	public static final String GAME_VIP_USER_LEVEL_UPDATE_QUEUE = "game-vip-user-level-update-queue";
+	
+	
 	// 活动自动过期
 	public static final String GAME_EVENT_EXPIRED = "game_event_expired_queue";
 	// ----------------------------------------------------------------------------------------

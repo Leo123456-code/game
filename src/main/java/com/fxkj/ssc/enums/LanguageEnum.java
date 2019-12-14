@@ -12,11 +12,11 @@ import org.apache.commons.lang3.StringUtils;
  */
 public enum LanguageEnum {
 
-    ZH_LANGUAGE("zh", "getZhLanguage", "setZhLanguage"),
+    ZH_LANGUAGE("zh", "getZhLanguage", "setZhLanguage","中文"),
 
-    MY_LANGUAGE("my", "getMyLanguage", "setMyLanguage"),
+    MY_LANGUAGE("my", "getMyLanguage", "setMyLanguage","ဗမာ"),
 
-    EN_LANGUAGE("en", "getEnLanguage", "setEnLanguage");
+    EN_LANGUAGE("en", "getEnLanguage", "setEnLanguage","English");
 
     private String code;
 
@@ -24,6 +24,8 @@ public enum LanguageEnum {
 
     private String setMethod;
 
+    private String languateDesc;
+    
     /**
      * @return 获取 code
      */
@@ -65,11 +67,21 @@ public enum LanguageEnum {
     public void setSetMethod(String setMethod) {
         this.setMethod = setMethod;
     }
+    
+    
+    public String getLanguateDesc() {
+		return languateDesc;
+	}
 
-    LanguageEnum(String code, String getMethod, String setMethod) {
+	public void setLanguateDesc(String languateDesc) {
+		this.languateDesc = languateDesc;
+	}
+
+	LanguageEnum(String code, String getMethod, String setMethod,String languateDesc) {
         this.code = code;
         this.getMethod = getMethod;
         this.setMethod = setMethod;
+        this.languateDesc = languateDesc;
     }
 
     public static LanguageEnum getLanguage(String code) {

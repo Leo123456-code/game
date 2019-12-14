@@ -88,7 +88,10 @@ public enum PlatformConfigEnum {
     MAX_USER_HEAD_IMG_LENGTH("MAX_USER_HEAD_IMG_LENGTH", "用户头像上传尺寸最大大小，单位为Kb"),
     WEB_SOCKET_SERVER_URL("WEB_SOCKET_SERVER_URL", "webSocket接入地址"),
 
-    POPULARIZE("POPULARIZE", "推广人秘钥配置");
+    POPULARIZE("POPULARIZE", "推广人秘钥配置"),
+    IS_OPEN_LANGUAGE("IS_OPEN_LANGUAGE","是否开启多语言版本"),
+    
+    ;
     private String code;
     private String desc;
 

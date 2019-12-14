@@ -87,7 +87,9 @@ public enum PlatformConfigEnum {
 	SUPER_REWARD_RANDOM_NUMBER("SUPER_REWARD_RANDOM_NUMBER","超级彩金用户随机中奖金额区间"),
 	GOOGLE_IMAGE_ISSUER_CONFIG("GOOGLE_IMAGE_ISSUER_CONFIG","谷歌验证码生成的使用者配置"),
 	MAX_USER_HEAD_IMG_LENGTH("MAX_USER_HEAD_IMG_LENGTH","用户头像上传尺寸最大大小，单位为Kb"),
-	WEB_SOCKET_SERVER_URL("WEB_SOCKET_SERVER_URL","webSocket接入地址");
+	WEB_SOCKET_SERVER_URL("WEB_SOCKET_SERVER_URL","webSocket接入地址"),
+	IS_OPEN_LANGUAGE("IS_OPEN_LANGUAGE","是否开启多语言版本")
+	;
     private String code;
     private String desc;
 

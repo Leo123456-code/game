@@ -29,9 +29,9 @@ public class GameActivityConstant {
 	/** 公告的消息前台用户UserId*/
 	public static final Long advertise_userId = -30000L;
 	
-	public static final Long brust_unVliad = -31000L;
-	
-	public static final Long brust_cz_unVliad = -32000L;
+//	public static final Long brust_unVliad = -31000L;
+//	
+//	public static final Long brust_cz_unVliad = -32000L;
 	
 	public static final String GAME_BRUST_ACTIVITY_CODE ="brustActivity";
 	

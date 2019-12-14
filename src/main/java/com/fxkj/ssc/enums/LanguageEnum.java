@@ -16,8 +16,13 @@ public enum LanguageEnum {
 
     MY_LANGUAGE("my", "getMyLanguage", "setMyLanguage","ဗမာ"),
 
-    EN_LANGUAGE("en", "getEnLanguage", "setEnLanguage","English");
+    EN_LANGUAGE("en", "getEnLanguage", "setEnLanguage","English"),
 
+    TH_LANGUAGE("th", "getThLanguage", "setThLanguage","ภาษาไทย")
+    
+    ;
+	
+	
     private String code;
 
     private String getMethod;

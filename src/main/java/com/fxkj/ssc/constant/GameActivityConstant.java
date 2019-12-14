@@ -78,7 +78,7 @@ public class GameActivityConstant {
 	/**系统随机用户的最大位数*/
 	public static final int max = 10;
 	
-	/**领奖状态，-1表示人工审核未通过，-2过期未领取, 1表示人工审核中，2表示已派发未领取，3表示已审核已领取*/
+	/**领奖状态，-3表示爆奖无效 -1表示人工审核未通过，-2过期未领取, 1表示人工审核中，2表示已派发未领取，3表示已审核已领取*/
 	public static final int brust_invalid_state = -3;
 	
 	public static final int brust_bouns_status_review = 1;

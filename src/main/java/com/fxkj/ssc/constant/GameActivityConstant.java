@@ -148,4 +148,10 @@ public class GameActivityConstant {
     //奖金池人为修改基础余额操作
     public static final Integer POOL_OPERATE_MANNUL_BASE = 6;
     
+    //爆奖通知消息类型
+    //爆奖成功
+    public static final Integer BRUST_SUCESS_TYPE = 0;
+    //爆奖失败
+    public static final Integer BRUST_FAIL_TYPE = -1;
+    
 }

@@ -126,7 +126,8 @@ public class GameActivityConstant {
 	//真实派发类型
 	public static final Integer REAL_DISTRIBUTE = 1;
 	
-    //虚拟派发类型
+    
+	//虚拟派发类型
 	public static final Integer VIRTUAl_DISTRIBUTE = 2;
 	
 	

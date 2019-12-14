@@ -129,6 +129,7 @@ public class GameActivityConstant {
     //虚拟派发类型
 	public static final Integer VIRTUAl_DISTRIBUTE = 2;
 	
+	
 	//奖金池重新摇奖操作
 	public static final Integer POOL_OPERATE_RESTART = 1;
 	

@@ -60,6 +60,7 @@ public class GameActivityConstant {
 	public static final String RECHARGE_CONSUME_RATIO = "RECHARGE_CONSUME_RATIO";
 	
 	
+	public static final Integer  BRUST_STATUS_OVER= 2;
 	
 	/**余额账户类型*/
 	public static final int balance_account = 0;

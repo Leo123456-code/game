@@ -32,7 +32,7 @@ public class ValidatorUtil {
      * 正则表达式：验证手机号
      */
 //    public static final String REGEX_MOBILE        = "^((13[0-9])|(15[^4,\\D])|(18[0,5-9]))\\d{8}$";
-    public static final String REGEX_MOBILE        = "^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[89])\\d{8}$";
+	public static final String REGEX_MOBILE = "^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[189])\\d{8}$";
 
     /** 
      * 正则表达式：验证邮箱

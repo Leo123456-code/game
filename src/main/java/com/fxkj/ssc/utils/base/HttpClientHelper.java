@@ -189,6 +189,7 @@ public class HttpClientHelper {
 
         } catch (Exception e) {
             e.printStackTrace();
+			logger.error("发送 post请求失败{}", e);
         } finally {
             try {
                 // 释放资源
@@ -437,6 +438,7 @@ public class HttpClientHelper {
             }
         } catch (Exception e) {
             e.printStackTrace();
+			logger.error("发送 post请求参数失败,{}", e);
         }
         return sendHttpPost(httpPost);
     }

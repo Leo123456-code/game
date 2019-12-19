@@ -13,12 +13,13 @@ import org.apache.commons.lang3.StringUtils;
 public enum LanguageEnum {
 
     ZH_LANGUAGE("zh", "getZhLanguage", "setZhLanguage","中文"),
-
-    MY_LANGUAGE("my", "getMyLanguage", "setMyLanguage","ဗမာ"),
-
+    
     EN_LANGUAGE("en", "getEnLanguage", "setEnLanguage","English"),
 
-    TH_LANGUAGE("th", "getThLanguage", "setThLanguage","ภาษาไทย")
+    TH_LANGUAGE("th", "getThLanguage", "setThLanguage","ภาษาไทย"),
+    
+    MY_LANGUAGE("my", "getMyLanguage", "setMyLanguage","ဗမာ")
+
     
     ;
 	

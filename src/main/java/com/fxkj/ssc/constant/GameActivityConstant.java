@@ -46,6 +46,8 @@ public class GameActivityConstant {
 	
 	public static final String GAME_REVISE_ACTIVITY_CODE ="reviseActivity";
 	
+	public static final String GAME_CHECK_IN_ACTIVITY_CODE ="checkInActivity"; 
+	
 	public static final String GAME_XFS_MODEL_CODE ="xfs";
 	/**充值送的分组model_code代码*/
 	public static final String GAME_SCS_MODEL_CODE = "czs";

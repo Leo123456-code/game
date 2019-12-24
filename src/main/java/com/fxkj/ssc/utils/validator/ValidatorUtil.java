@@ -21,7 +21,8 @@ public class ValidatorUtil {
     /**
      * 正则表达式：验证用户名 6到10位
      */
-    public static final String REGEX_USERNAME_SIX  = "^[a-zA-Z][a-zA-Z\\d]{5,9}$";
+	// public static final String REGEX_USERNAME_SIX = "^[a-zA-Z][a-zA-Z\\d]{5,9}$";
+	public static final String REGEX_USERNAME_SIX = "^[a-zA-Z0-9]{6,15}$";
 
     /**
      * 正则表达式：验证密码

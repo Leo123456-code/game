@@ -90,6 +90,7 @@ public enum PlatformConfigEnum {
 
     POPULARIZE("POPULARIZE", "推广人秘钥配置"),
     IS_OPEN_LANGUAGE("IS_OPEN_LANGUAGE","是否开启多语言版本"),
+    OPEN_AGENT_DOMAIN("OPEN_AGENT_DOMAIN","是否开启代理域名绑定功能"),
     
     ;
     private String code;

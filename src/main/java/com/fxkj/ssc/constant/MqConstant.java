@@ -202,4 +202,8 @@ public class MqConstant {
 
     //OTC活动队列
     public static final String ACTIVITY_OTC_QUEUE                                = "activity-otc-queue";
+    
+    //用户中奖队列
+    public static final String GAME_USER_WINMONEY_QUEUE                          = "game-user-winmoney-queue";
+    
 }

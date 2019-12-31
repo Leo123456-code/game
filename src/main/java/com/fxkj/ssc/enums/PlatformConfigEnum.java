@@ -92,7 +92,7 @@ public enum PlatformConfigEnum {
     IS_OPEN_LANGUAGE("IS_OPEN_LANGUAGE","是否开启多语言版本"),
     OPEN_AGENT_DOMAIN("OPEN_AGENT_DOMAIN","是否开启代理域名绑定功能"),
     GAME_USER_WIN_MIN_MONEY("GAME_USER_WIN_MIN_MONEY","用户最小盈利金额，大于等于该金额将放入中奖列表中"),
-    
+    IS_OPEN_CLEAN_TABLES("IS_OPEN_CLEAN_TABLES","是否开启数据清理功能"),
     
     ;
     private String code;

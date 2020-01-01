@@ -12,6 +12,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TimeZone;
 
+import com.alibaba.fastjson.JSONObject;
+
 import net.sf.json.JSON;
 
 /**
@@ -86,8 +88,50 @@ public class DateUtils {
 	}
 	
 	
+	/**判断给定时间是否是一月中最后一天 james*/
+	public static boolean isLastDayOfMonth(Date date) {
+		String currentDate = DateUtils.formateDate(date);
+		
+		Calendar cal = Calendar.getInstance();
+		cal.set(Calendar.DAY_OF_MONTH, cal.getActualMaximum(Calendar.DAY_OF_MONTH));
+		
+		return currentDate.equals(DateUtils.formateDate(cal.getTime()));
+	}
 	
+	/**获取前一个月中最后一天 james*/
+	public static String getLastDayOfCurrentMonth(Date date) {
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(date);
+		cal.set(Calendar.DAY_OF_MONTH, 0);
+		return DateUtils.formateDate(cal.getTime());
+	}
 	
+	/**获取前一个月中最后一天 james*/
+	public static String getLastDayOfBeforeMonth(Date date) {
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(date);
+		cal.set(Calendar.DAY_OF_MONTH, 0);
+		return DateUtils.formateDate(cal.getTime());
+	}
+	
+	/**根据给定的日期  获取当前的年份和月份james*/
+	public static String getMonthOfYearByDayDate(String dayTime) {
+		Date parse = DateUtils.parse(dayTime,DATE_SMALL_STR);
+		SimpleDateFormat sf = new SimpleDateFormat(MONTH_SMALL_STR);
+		
+		return sf.format(parse);
+	}
+	
+	/**根据给定的日期  获取上个月当前的年份和月份james*/
+	public static String getLastMonthOfYearByDayDate(String dayTime) {
+		Date parse = DateUtils.parse(dayTime,DATE_SMALL_STR);
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(parse);
+		cal.add(Calendar.MONTH, -1);
+		SimpleDateFormat sf = new SimpleDateFormat(MONTH_SMALL_STR);
+		
+		return sf.format(cal.getTime());
+	}
 	
 	/**获取往后最近的周日的日期 james*/
 	public static String getLastSunday() throws Exception {
@@ -143,6 +187,42 @@ public class DateUtils {
 		resultMap.put("currentMonthFirstDay",currentMonthFirstDay);
 		resultMap.put("lastMonthFirstDay", lastMonthFirstDay);
 		return resultMap;
+	}
+	
+	public static void main(String[] args) throws ParseException {
+//		System.out.println(formateDate("2019-11-13 00:00:00"));
+//		Calendar cal = Calendar.getInstance();
+//		cal.setTime(new Date());
+//		cal.set(Calendar.HOUR_OF_DAY, 0);
+//		cal.set(Calendar.MINUTE, 0);
+//		cal.set(Calendar.SECOND, 0);
+//		cal.set(Calendar.MILLISECOND, 0);
+//		SimpleDateFormat sf = new SimpleDateFormat(DATE_FULL_STR);
+//		
+//		System.out.println(sf.format(cal.getTime()));
+	
+//		
+//		System.out.println(getSpecifiedDateWeekAgo(DateUtils.formateDate(new Date())));
+//		
+//		System.out.println(getSpecifiedDateMonthAgo(DateUtils.formateDate(new Date())));
+//		
+//		Date currentDate = DateUtils.parse("2020-01-01", DateUtils.DATE_SMALL_STR);
+//		Map<String, String> paramsMap = getCurrentMonthAndLastMonthFirstDay(currentDate);
+//
+//		
+//		System.out.println(com.alibaba.fastjson.JSON.toJSONString(paramsMap));
+//		
+//		
+//		String lastDayOfBeforeMonth = getLastDayOfBeforeMonth(DateUtils.parse("2019-12-31", DateUtils.DATE_SMALL_STR));
+//		System.out.println(lastDayOfBeforeMonth);
+		
+//		Map<String, String> currentMonthAndLastMonthFirstDay = getCurrentMonthAndLastMonthFirstDay(DateUtils.parse("2019-10-29", DateUtils.DATE_SMALL_STR));
+//		System.out.println(JSONObject.toJSON(currentMonthAndLastMonthFirstDay)
+//				);
+		
+		System.out.println(getMonthOfYearByDayDate("2019-12-01"));
+		System.out.println(getLastMonthOfYearByDayDate("2019-12-01"));
+		
 	}
 	
 	/**拼接特定的日期 james*/
@@ -1006,29 +1086,7 @@ public class DateUtils {
 		}
 	}
 
-	public static void main(String[] args) throws ParseException {
-		System.out.print(formateDate("2019-11-13 00:00:00"));
-//		Calendar cal = Calendar.getInstance();
-//		cal.setTime(new Date());
-//		cal.set(Calendar.HOUR_OF_DAY, 0);
-//		cal.set(Calendar.MINUTE, 0);
-//		cal.set(Calendar.SECOND, 0);
-//		cal.set(Calendar.MILLISECOND, 0);
-//		SimpleDateFormat sf = new SimpleDateFormat(DATE_FULL_STR);
-//		
-//		System.out.println(sf.format(cal.getTime()));
 	
-		
-		System.out.println(getSpecifiedDateWeekAgo(DateUtils.formateDate(new Date())));
-		
-		System.out.println(getSpecifiedDateMonthAgo(DateUtils.formateDate(new Date())));
-		
-		Date currentDate = DateUtils.parse("2020-01-01", DateUtils.DATE_SMALL_STR);
-		Map<String, String> paramsMap = getCurrentMonthAndLastMonthFirstDay(currentDate);
-
-		
-		System.out.println(com.alibaba.fastjson.JSON.toJSONString(paramsMap));
-	}
     /**
      * @return
      * @Param yy-MM-dd'T'HH:mm    Date_MON_DAY

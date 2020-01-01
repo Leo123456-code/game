@@ -42,7 +42,11 @@ public class GameActivityConstant {
 	
 	public static final String GAME_CZS_ACTIVITY_CODE ="czsActivity";
 	
+	public static final String GAME_AGENT_MODEL_CODE= "agent";
+	
 	public static final String GAME_AGENT_ACTIVITY_CODE ="agentRebate";
+	
+	public static final String GAME_LOSS_ACTIVITY_CODE ="agentLoss";
 	
 	public static final String GAME_REVISE_ACTIVITY_CODE ="reviseActivity";
 	

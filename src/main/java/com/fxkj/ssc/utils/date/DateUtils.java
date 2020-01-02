@@ -157,7 +157,7 @@ public class DateUtils {
 	
 	/**获取当前月1号和上个月1号 james */
 	public static Map<String,String> getCurrentMonthAndLastMonthFirstDay(String currentDate) throws ParseException {
-		String formateDate = DateUtils.formateDate(currentDate);
+		Date formateDate = DateUtils.parse(currentDate, DateUtils.DATE_SMALL_STR);
 		return getCurrentMonthAndLastMonthFirstDay(formateDate);
 	}
 	

@@ -6,6 +6,7 @@ package com.fxkj.ssc.jobMqVo;
 import java.util.Date;
 
 import com.fxkj.ssc.baseVo.RabbitmqBaseVO;
+import com.fxkj.ssc.jobMqVo.agent.AgentLossRuleDto;
 
 
 /**  
@@ -19,6 +20,8 @@ public class AgentActivtiyRabbitmqVo extends RabbitmqBaseVO{
 	
     private AgentUserDto agentUserDto;
 	
+    private  AgentLossRuleDto agentLossRuleDto;
+    
     private Date  dayTime;
 	
 	/**活动代码*/
@@ -26,6 +29,23 @@ public class AgentActivtiyRabbitmqVo extends RabbitmqBaseVO{
 
 	/**执行日期*/
 	private String  executeCurrentDayDate;
+
+	
+	
+	
+	/**
+	 * @return agentLossRuleDto
+	 */
+	public AgentLossRuleDto getAgentLossRuleDto() {
+		return agentLossRuleDto;
+	}
+
+	/**
+	 * @param agentLossRuleDto 要设置的 agentLossRuleDto
+	 */
+	public void setAgentLossRuleDto(AgentLossRuleDto agentLossRuleDto) {
+		this.agentLossRuleDto = agentLossRuleDto;
+	}
 
 	/**
 	 * @return agentUserDto

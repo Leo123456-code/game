@@ -12,9 +12,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TimeZone;
 
-import com.alibaba.fastjson.JSONObject;
-
-import net.sf.json.JSON;
 
 /**
  * 日期处理相关工具类
@@ -98,13 +95,15 @@ public class DateUtils {
 		return currentDate.equals(DateUtils.formateDate(cal.getTime()));
 	}
 	
-	/**获取前一个月中最后一天 james*/
-	public static String getLastDayOfCurrentMonth(Date date) {
+	/**获取前二个月的最后一天 james*/
+	public static String getLastDayOfLastTwoMonth(Date date) {
 		Calendar cal = Calendar.getInstance();
 		cal.setTime(date);
+		cal.add(Calendar.MONTH, -1);
 		cal.set(Calendar.DAY_OF_MONTH, 0);
 		return DateUtils.formateDate(cal.getTime());
 	}
+	
 	
 	/**获取前一个月中最后一天 james*/
 	public static String getLastDayOfBeforeMonth(Date date) {
@@ -190,6 +189,7 @@ public class DateUtils {
 	}
 	
 	public static void main(String[] args) throws ParseException {
+		
 //		System.out.println(formateDate("2019-11-13 00:00:00"));
 //		Calendar cal = Calendar.getInstance();
 //		cal.setTime(new Date());
@@ -220,8 +220,10 @@ public class DateUtils {
 //		System.out.println(JSONObject.toJSON(currentMonthAndLastMonthFirstDay)
 //				);
 		
-		System.out.println(getMonthOfYearByDayDate("2019-12-01"));
-		System.out.println(getLastMonthOfYearByDayDate("2019-12-01"));
+//		System.out.println(getMonthOfYearByDayDate("2019-12-01"));
+//		System.out.println(getLastMonthOfYearByDayDate("2019-12-01"));
+		
+//		System.out.println(getLastDayOfCurrentMonth(DateUtils.parse("2020-01-06", DateUtils.DATE_SMALL_STR)));
 		
 	}
 	

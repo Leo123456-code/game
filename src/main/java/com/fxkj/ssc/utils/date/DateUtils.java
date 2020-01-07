@@ -90,10 +90,16 @@ public class DateUtils {
 		String currentDate = DateUtils.formateDate(date);
 		
 		Calendar cal = Calendar.getInstance();
-		cal.set(Calendar.DAY_OF_MONTH, cal.getActualMaximum(Calendar.DAY_OF_MONTH));
-		
+		cal.setTime(date);
+		cal.add(Calendar.MONTH, 1);
+	
+		cal.set(Calendar.DAY_OF_MONTH, 0);
+//		cal.set(Calendar.DAY_OF_MONTH, cal.getActualMaximum(Calendar.DAY_OF_MONTH));
+		System.out.println(DateUtils.formateDate(cal.getTime()));
 		return currentDate.equals(DateUtils.formateDate(cal.getTime()));
 	}
+	
+	
 	
 	/**获取前二个月的最后一天 james*/
 	public static String getLastDayOfLastTwoMonth(Date date) {
@@ -189,7 +195,9 @@ public class DateUtils {
 	}
 	
 	public static void main(String[] args) throws ParseException {
+		isLastDayOfMonth(DateUtils.parse("2020-02-29", DATE_SMALL_STR));
 		
+		System.out.println(isLastDayOfMonth(DateUtils.parse("2020-02-29", DATE_SMALL_STR)));
 //		System.out.println(formateDate("2019-11-13 00:00:00"));
 //		Calendar cal = Calendar.getInstance();
 //		cal.setTime(new Date());

@@ -164,4 +164,8 @@ public class GameActivityConstant {
     //爆奖失败
     public static final Integer BRUST_FAIL_TYPE = -1;
     
+    //春节有效消费量活动
+    public static final Integer consume_spring_activity = 1;
+    //春节每日存款额活动
+    public static final Integer recharge_spring_activity = 2;
 }

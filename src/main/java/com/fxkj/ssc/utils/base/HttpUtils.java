@@ -238,6 +238,7 @@ public class HttpUtils {
 				params = FastJsonUtil.toJSONString(parameters);
 			}
 			java.net.HttpURLConnection httpConn = getPostConnection(url);
+			httpConn.setRequestProperty("Content-Type", "application/json; charset=utf-8");
 			// 获取HttpURLConnection对象对应的输出流
 			out = new PrintWriter(httpConn.getOutputStream());
 			// 发送请求参数

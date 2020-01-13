@@ -3,7 +3,8 @@
  */
 package com.fxkj.ssc.constant;
 
-
+import java.util.HashMap;
+import java.util.Map;
 
 /**  
 * @ClassName: GameActivityConstant  
@@ -172,4 +173,12 @@ public class GameActivityConstant {
     public static final Integer consume_spring_activity = 1;
     //春节每日存款额活动
     public static final Integer recharge_spring_activity = 2;
+    
+    public static Map<Integer,String> springMap ;
+    
+    static {
+    	springMap  = new HashMap<Integer, String>();
+    	springMap.put(consume_spring_activity, "每日有效消费量");
+    	springMap.put(recharge_spring_activity, "每日存款额");
+    }
 }

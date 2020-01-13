@@ -138,6 +138,10 @@ public class MqConstant {
 
     // 代理返佣的派发队列，
     public static final String GAME_AGENT_REBATE_DISTRIBUTE_QUEUE                = "game_agent_rebate_distribute_queue";
+    // 春节活动消费量检测队列
+    public static final String GAME_SPRING_CONSUME_CHECK_QUEUE                   = "game_spring_consume_check_queue";
+    // 春节活动充值量检测队列
+    public static final String GAME_SPRING_RECHARGE_CHECK_QUEUE                   = "game_spring_recharge_check_queue";
     // ----------------------------------------------------------------------------------------
     // 单笔充值金额，Vip等级提升监听
     public static final String GAME_VIP_SINGLE_DEPOSIT                           = "game-vip-single-deposit-queue";

@@ -4,11 +4,14 @@
  */
 package com.fxkj.ssc.utils.date;
 
+import java.lang.Thread.State;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.TimeZone;
 
@@ -64,6 +67,41 @@ public class DateUtils {
 		return parse;
 	}
 	
+//	/**拼接日期时间 */
+//	public static Date generateDateTime(String dayTime1,String dayTime2) throws Exception {
+//		
+//		SimpleDateFormat sf = new SimpleDateFormat(DateUtils.TIME_FULL_STR);
+//		String format = sf.format(new Date());
+//		String newTime = dayTime + " " + format;
+//		sf = new SimpleDateFormat(DateUtils.DATE_FULL_STR);
+//		Date parse = sf.parse(newTime);
+//		
+//		return parse;
+//	}
+	
+	/**返回春节活动今天之前过去未计算的日期。便于测试 */
+	public static List<String> generateSpringActivityDate(String startDate,String endDate) throws Exception {
+		List<String> result = new ArrayList<String>();
+		if(startDate.equals(endDate)) {
+			return result;
+		}
+		SimpleDateFormat sdf = new SimpleDateFormat(DateUtils.DATE_SMALL_STR);
+		Calendar cal = Calendar.getInstance();
+		
+		while(!endDate.equals(startDate)) {
+		
+            result.add(startDate);
+           
+			Date parse = sdf.parse(startDate);
+			cal.setTime(parse); // 设置日期
+			cal.add(Calendar.DATE, +1);
+			
+			startDate = DateUtils.formateDate(cal.getTime());
+            
+		}
+		
+		return result;
+	}
 	
 	/**获取下周日的日期 james*/
 	public static String getNextSunday(Date date) throws Exception {

@@ -915,6 +915,15 @@ public class DateUtils {
 		return nextDay;
 	}
 
+	public static String getScheduleNextDay(String schedule) throws ParseException {
+		SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd");
+		Date dayTime = sf.parse(schedule);
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(dayTime);
+		cal.add(Calendar.DATE, +1);
+		Date nextDay = cal.getTime();
+		return DateUtils.formateDate(nextDay);
+	}
 	/**
 	 * @Description: 获取当前时间的日期时间
 	 * @author:James

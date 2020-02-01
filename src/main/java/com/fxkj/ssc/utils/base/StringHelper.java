@@ -2,10 +2,7 @@ package com.fxkj.ssc.utils.base;
 
 import java.io.UnsupportedEncodingException;
 import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.StringTokenizer;
+import java.util.*;
 import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -422,7 +419,7 @@ public final class StringHelper {
 
 	/**
 	 * 描述：把数组中的所有元素出现的字符串进行替换，把旧字符串替换为新字符数组的所有元素，只替换第一次出现的字符。
-	 * 
+	 *
 	 * @param string
 	 *            需要替换的数组
 	 * @param placeholders
@@ -482,7 +479,7 @@ public final class StringHelper {
 
 	/**
 	 * 描述：计算字符串中未引用的字符
-	 * 
+	 *
 	 * @param string
 	 *            字符串
 	 * @param character
@@ -512,9 +509,9 @@ public final class StringHelper {
 	}
 
 	/**
-	 * 
+	 *
 	 * 描述：描述：判断字符串是否为空，如果为true则为空。与isEmpty不同，如果字符为" "也视为空字符
-	 * 
+	 *
 	 * @param str
 	 *            字符串
 	 * @return
@@ -541,9 +538,9 @@ public final class StringHelper {
 	}
 
 	/**
-	 * 
+	 *
 	 * 描述：描述：判断字符串是否为空，如果为true则不为空。与isNotEmpty不同，如果字符为" "也视为空字符
-	 * 
+	 *
 	 * @param str
 	 *            字符串
 	 * @return
@@ -720,7 +717,7 @@ public final class StringHelper {
 
 	/**
 	 * 描述：判断一个字符是Ascill字符还是其它字符（如汉，日，韩文字符）
-	 * 
+	 *
 	 * @param c
 	 *            需要判断的字符
 	 * @return
@@ -937,7 +934,7 @@ public final class StringHelper {
 
 	/**
 	 * 描述：为了防止跨站脚本攻击，转换<>这种尖括号。
-	 * 
+	 *
 	 * @param source
 	 * @return
 	 */
@@ -1114,9 +1111,9 @@ public final class StringHelper {
 	}
 
 	/**
-	 * 
+	 *
 	 * 描述：大写英文字母转换成小写
-	 * 
+	 *
 	 * @param strIn
 	 *            字符串参数
 	 * @return
@@ -1141,9 +1138,9 @@ public final class StringHelper {
 	}
 
 	/**
-	 * 
+	 *
 	 * 描述：小写英文字母转换成大写
-	 * 
+	 *
 	 * @param strIn
 	 *            字符串参数
 	 * @return
@@ -1169,7 +1166,7 @@ public final class StringHelper {
 
 	/**
 	 * 货币缩写,提供亿和万两个单位，并精确到小数点2位 切换到新的算法:对数算法
-	 * 
+	 *
 	 * @param original
 	 * @return
 	 */
@@ -1203,7 +1200,7 @@ public final class StringHelper {
 
 	/**
 	 * 将日期格式由yyyyMMdd装换为yyyy-MM-dd
-	 * 
+	 *
 	 * @param date
 	 *            Date string whose format is yyyyMMdd.
 	 * @return
@@ -1223,7 +1220,7 @@ public final class StringHelper {
 
 	/**
 	 * 判断是否为整数
-	 * 
+	 *
 	 * @param str
 	 *            传入的字符串
 	 * @return 是整数返回true,否则返回false
@@ -1236,7 +1233,7 @@ public final class StringHelper {
 
 	/**
 	 * 用于=中英文混排标题中限定字符串长度。保证显示长度最多只相差一个全角字符。
-	 * 
+	 *
 	 * @param string
 	 *            需要截取的字符串
 	 * @param byteCount
@@ -1280,7 +1277,7 @@ public final class StringHelper {
 
 	/**
 	 * 描述：根据长度截断字串
-	 * 
+	 *
 	 * @param str
 	 *            字串
 	 * @param length
@@ -1304,7 +1301,7 @@ public final class StringHelper {
 
 	/**
 	 * 描述：把某一个字符变成大写
-	 * 
+	 *
 	 * @param str
 	 *            str 字串
 	 * @param index
@@ -1317,7 +1314,7 @@ public final class StringHelper {
 
 	/**
 	 * 描述：把某一个字符变成小写 作者：李建 时间：Dec 17, 2010 9:42:32 PM
-	 * 
+	 *
 	 * @param str
 	 *            str 字串
 	 * @param index
@@ -1330,7 +1327,7 @@ public final class StringHelper {
 
 	/**
 	 * 描述：把某一个字符变成大写或小写 作者：李建 时间：Dec 17, 2010 9:39:32 PM
-	 * 
+	 *
 	 * @param str
 	 *            字串
 	 * @param index
@@ -1354,7 +1351,7 @@ public final class StringHelper {
 
 	/**
 	 * 将字符串用分隔符断裂成字符串列表
-	 * 
+	 *
 	 * @param value
 	 *            原字符串
 	 * @param separator
@@ -1375,7 +1372,7 @@ public final class StringHelper {
 
 	/**
 	 * 将数组用分隔符连接成新字符串(split的逆方法)
-	 * 
+	 *
 	 * @param strs
 	 *            字符串数组
 	 * @param sep
@@ -1392,7 +1389,7 @@ public final class StringHelper {
 
 	/**
 	 * 获得一个UUID
-	 * 
+	 *
 	 * @return String UUID
 	 */
 	public static String getUUID() {
@@ -1414,7 +1411,7 @@ public final class StringHelper {
 	 * @param strNew
 	 *            要替换的字符串
 	 * @return 替换后的字符串
-	 * 
+	 *
 	 *         <pre>
 	 */
 	public static final String replaceAllStr(String strSrc, String strOld, String strNew) {
@@ -1454,7 +1451,7 @@ public final class StringHelper {
 	/**
 	 * 用于将字符串中的特殊字符转换成Web页中可以安全显示的字符串 可对表单数据据进行处理对一些页面特殊字符进行处理如'
 	 * <','>','"',''','&'
-	 * 
+	 *
 	 * @param strSrc
 	 *            要进行替换操作的字符串
 	 * @return 替换特殊字符后的字符串
@@ -1492,7 +1489,7 @@ public final class StringHelper {
 	/**
 	 * 用于将字符串中的特殊字符转换成Web页中可以安全显示的字符串 可对表单数据据进行处理对一些页面特殊字符进行处理如'
 	 * <','>','"',''','&'
-	 * 
+	 *
 	 * @param strSrc
 	 *            要进行替换操作的字符串
 	 * @param quotes
@@ -1533,7 +1530,7 @@ public final class StringHelper {
 
 	/**
 	 * 和htmlEncode正好相反
-	 * 
+	 *
 	 * @param strSrc
 	 *            要进行转换的字符串
 	 * @return 转换后的字符串
@@ -1552,7 +1549,7 @@ public final class StringHelper {
 
 	/**
 	 * 实际处理 return toChineseNoReplace(null2Blank(str));
-	 * 
+	 *
 	 * @param str
 	 *            要进行处理的字符串
 	 * @return 转换后的字符串
@@ -1576,7 +1573,7 @@ public final class StringHelper {
 
 	/**
 	 * 把null值和""值转换成&nbsp; 主要应用于页面表格格的显示
-	 * 
+	 *
 	 * @param str
 	 *            要进行处理的字符串
 	 * @return 转换后的字符串
